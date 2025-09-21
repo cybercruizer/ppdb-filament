@@ -13,6 +13,7 @@ class SiswaDashboard extends \Filament\Pages\Dashboard
     
     protected static ?string $navigationIcon = 'heroicon-o-academic-cap';
     protected static string $routePath = 'admin';
+    protected static bool $shouldRegisterNavigation = false;
 
     public function getColumns(): int | string | array
     {

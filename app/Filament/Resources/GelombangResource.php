@@ -17,7 +17,7 @@ class GelombangResource extends Resource
 {
     protected static ?string $model = Gelombang::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-arrow-left-end-on-rectangle';
     protected static ?string $navigationGroup = 'Data Dasar';
 
     public static function form(Form $form): Form

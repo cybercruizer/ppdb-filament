@@ -8,11 +8,11 @@ use Filament\Widgets\ChartWidget;
 
 class SiswaChart extends ChartWidget
 {
-    protected static ?string $heading = 'Student Registration';
+    protected static ?string $heading = 'Grafik Pendaftar';
     
     public ?string $filter = 'current_year';
     protected int | string | array $columnSpan = 'full';
-    protected static ?string $maxHeight = '500px';
+    protected static ?string $maxHeight = '600px';
     
     protected function getFilters(): ?array
     {
@@ -25,7 +25,7 @@ class SiswaChart extends ChartWidget
         }
         
         // Add current year as default
-        $filters['current_year'] = 'Current Year';
+        $filters['current_year'] = 'Tahun ini';
         
         // Add month options for current year
         for ($month = 1; $month <= 12; $month++) {
@@ -76,7 +76,7 @@ class SiswaChart extends ChartWidget
         return [
             'datasets' => [
                 [
-                    'label' => "Students Registered in {$year}",
+                    'label' => "Calon siswa terdaftar pada {$year}",
                     'data' => $chartData,
                     'borderColor' => 'rgb(34, 197, 94)',
                     'backgroundColor' => 'rgba(34, 197, 94, 0.1)',
@@ -118,7 +118,7 @@ class SiswaChart extends ChartWidget
         return [
             'datasets' => [
                 [
-                    'label' => "Daily Registrations - {$monthName}",
+                    'label' => "Pendaftar harian - {$monthName}",
                     'data' => $chartData,
                     'borderColor' => 'rgb(239, 68, 68)',
                     'backgroundColor' => 'rgba(239, 68, 68, 0.1)',

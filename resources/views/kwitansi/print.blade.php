@@ -36,9 +36,9 @@
         .header {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             border-bottom: 2px solid #000;
-            padding-bottom: 15px;
+            padding-bottom: 5px;
         }
         
         .logo-container {
@@ -98,12 +98,12 @@
         
         .kwitansi-no {
             text-align: right;
-            margin-bottom: 15px;
+            margin-bottom: 5px;
             font-size: 11px;
         }
         
         .content {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         
         .info-row {
@@ -133,8 +133,8 @@
         }
         
         .amount-section {
-            margin: 20px 0;
-            padding: 12px;
+            margin: 5px 0;
+            padding: 5px;
             border: 1px solid #000;
             background-color: #f9f9f9;
         }
@@ -155,7 +155,7 @@
         }
         
         .status-section {
-            margin: 15px 0;
+            margin: 5px 0;
             text-align: center;
         }
         
@@ -181,7 +181,7 @@
         }
         
         .signature-section {
-            margin-top: 30px;
+            margin-top: 10px;
             display: flex;
             justify-content: space-between;
         }
@@ -204,7 +204,7 @@
         
         .date-location {
             text-align: right;
-            margin-bottom: 15px;
+            margin-bottom: 5px;
             font-size: 12px;
         }
         
@@ -261,10 +261,10 @@
             <div class="logo-container">
                 <div class="logo">
                     <!-- Ganti dengan path logo sekolah Anda -->
-                    <!-- <img src="/path/to/logo.png" alt="Logo Sekolah" style="max-width: 100%; max-height: 100%;"> -->
-                    <div class="logo-placeholder">
+                    <img src="/logo-smk.png" alt="Logo Sekolah" style="max-width: 100%; max-height: 100%;">
+                    {{-- <div class="logo-placeholder">
                         LOGO<br>SEKOLAH
-                    </div>
+                    </div> --}}
                 </div>
             </div>
             <div class="header-info">
@@ -281,7 +281,7 @@
         
         <!-- Nomor Kwitansi -->
         <div class="kwitansi-no">
-            No. Kwitansi: KWT/{{ date('Y') }}/{{ str_pad($pembayaran->id, 4, '0', STR_PAD_LEFT) }}
+            No. Kwitansi: PPDB/{{ substr($pembayaran->siswa->tahun->nama_tahun, 0, 4) }}/{{ str_pad($pembayaran->id, 4, '0', STR_PAD_LEFT) }}
         </div>
         
         <!-- Tanggal dan Tempat -->
@@ -351,9 +351,9 @@
             </div>
             
             <div class="signature-box">
-                <div>Bendahara,</div>
-                <div class="signature-line"></div>
-                <div class="signature-label">( ................... )</div>
+                <div>Bendahara,</div><br><br><br>
+                {{-- <div class="signature-line"></div> --}}
+                <div class="signature-label">( ...................... )</div>
             </div>
         </div>
     </div>

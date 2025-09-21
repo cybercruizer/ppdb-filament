@@ -547,7 +547,7 @@
                 <li><a href="#program">Program</a></li>
                 <li><a href="#berita">Berita</a></li>
                 <li><a href="#kontak">Kontak</a></li>
-                <li><a href="#ppdb" class="btn btn-primary" style="padding: 0.5rem 1.5rem;">Daftar PPDB</a></li>
+                <li><a href="/pendaftaran" class="btn btn-primary" style="padding: 0.5rem 1.5rem;">Daftar PPDB</a></li>
             </ul>
 
             <div class="hamburger" id="hamburger">
@@ -578,7 +578,7 @@
                 dan Berbasis Islami</p>
 
             <div class="cta-buttons">
-                <a href="#ppdb" class="btn btn-primary">
+                <a href="/pendaftaran" class="btn btn-primary">
                     <i class="fas fa-user-plus"></i> Daftar Sekarang
                 </a>
                 <a href="#tentang" class="btn btn-secondary">
@@ -600,7 +600,7 @@
                             <i class="fas fa-calendar"></i> {{ $post->created_at->format('d M Y') }}
                         </div>
                         <h3>{{$post->title}}</h3>
-                        <p>{{Str::limit($post->content,100)}}</p>
+                        <p>{!!Str::limit($post->content,100)!!}</p>
                         <a href="post/{{$post->id}}" class="read-more">
                             Baca Selengkapnya <i class="fas fa-arrow-right"></i>
                         </a>

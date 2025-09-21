@@ -27,7 +27,7 @@ class PembayaranResource extends Resource
 {
     protected static ?string $model = Pembayaran::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-banknotes';
     protected static ?string $navigationGroup = 'Data Keuangan';
     //change the url to pembayaran
     protected static ?string $slug = 'pembayaran';
@@ -39,9 +39,14 @@ class PembayaranResource extends Resource
                 Select::make('tagihan_id')
                     ->label('Tagihan Siswa')
                     ->options(
-                        Tagihan::with('siswa')->get()->mapWithKeys(function ($t) {
-                            return [$t->id => $t->siswa->nama . ' - ' . number_format($t->jumlah_tagihan)];
-                        })
+                        Tagihan::with('siswa')
+                            ->whereHas('siswa.tahun', function ($query) {
+                                $query->where('is_active', true);
+                            })
+                            ->get()
+                            ->mapWithKeys(function ($t) {
+                                return [$t->id => $t->siswa->nama . ' - ' . number_format($t->jumlah_tagihan)];
+                            })
                     )
                     ->searchable()
                     ->live()
@@ -93,6 +98,9 @@ class PembayaranResource extends Resource
     {
         return $table
             ->columns([
+                TextColumn::make('row_number')
+                    ->label('No.')
+                    ->rowIndex(),
                 TextColumn::make('siswa.nama')
                     ->label('Nama Siswa')
                     ->searchable()
@@ -141,8 +149,10 @@ class PembayaranResource extends Resource
 
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
+                Tables\Actions\EditAction::make()
+                    ->visible(fn () => auth()->user()->can('edit_any_pembayaran')),
+                Tables\Actions\DeleteAction::make()
+                    ->visible(fn () => auth()->user()->can('delete_any_pembayaran')),
                 // Print Receipt Action
                 Action::make('print_kwitansi')
                     ->label('Print Kwitansi')

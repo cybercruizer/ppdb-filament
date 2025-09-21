@@ -3,6 +3,7 @@
 namespace App\Filament\Resources;
 
 use Dom\Text;
+use stdClass;
 use Filament\Forms;
 use Filament\Tables;
 use App\Models\Tagihan;
@@ -23,21 +24,23 @@ class TagihanResource extends Resource
 {
     protected static ?string $model = Tagihan::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-credit-card';
+    protected static ?string $navigationGroup = 'Data Keuangan';
     protected static ?string $slug = 'tagihan';
 
     public static function form(Form $form): Form
     {
         return $form
-            ->schema([
-                
-            ]);
+            ->schema([]);
     }
 
     public static function table(Table $table): Table
     {
         return $table
             ->columns([
+                TextColumn::make('row_number')
+                    ->label('No.')
+                    ->rowIndex(),
                 TextColumn::make('siswa.nama')
                     ->label('Nama Siswa')
                     ->searchable()
@@ -49,14 +52,14 @@ class TagihanResource extends Resource
                 TextColumn::make('pembayarans.jumlah_pembayaran')
                     ->label('Jumlah Pembayaran')
                     ->money('IDR')
-                    ->getStateUsing(fn ($record) => $record->pembayarans->sum('jumlah_pembayaran')),
+                    ->getStateUsing(fn($record) => $record->pembayarans->sum('jumlah_pembayaran')),
                 TextColumn::make('Lunas')
                     ->label('Status')
                     ->getStateUsing(function ($record) {
                         return $record->pembayarans->sum('jumlah_pembayaran') >= $record->jumlah_tagihan ? 'Lunas' : 'Belum Lunas';
                     })
                     ->badge()
-                    ->color(fn ($state) => $state === 'Lunas' ? 'success' : 'danger'),
+                    ->color(fn($state) => $state === 'Lunas' ? 'success' : 'danger'),
             ])
             ->filters([
                 //make filter for gelombang
@@ -70,14 +73,17 @@ class TagihanResource extends Resource
                     ->default(null),
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
+                Tables\Actions\EditAction::make()
+                    ->visible(fn() => auth()->user()->can('edit_any_tagihan')),
+                Tables\Actions\DeleteAction::make()
+                    ->visible(fn() => auth()->user()->can('delete_any_tagihan')),
 
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
-                ]),
+                ])
+                    ->visible(fn() => auth()->user()->can('delete_any_tagihan')),
             ])
             ->headerActions([
                 ExportAction::make()
@@ -100,7 +106,7 @@ class TagihanResource extends Resource
     {
         return [
             'index' => Pages\ListTagihans::route('/'),
-            'create' => Pages\CreateTagihan::route('/create'),
+            //'create' => Pages\CreateTagihan::route('/create'),
             //'edit' => Pages\EditTagihan::route('/{record}/edit'),
         ];
     }

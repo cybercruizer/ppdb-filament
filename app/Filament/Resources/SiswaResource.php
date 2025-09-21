@@ -21,8 +21,8 @@ class SiswaResource extends Resource
 {
     protected static ?string $model = Siswa::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-    //protected static ?string $navigationGroup = 'Data Dasar';
+    protected static ?string $navigationIcon = 'heroicon-o-user-group';
+    protected static ?string $navigationGroup = 'PPDB';
     protected static ?string $navigationLabel = 'Pendaftar';
     protected static ?string $label = 'Pendaftar';
 

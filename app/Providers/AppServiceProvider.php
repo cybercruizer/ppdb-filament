@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
 use Filament\Support\Facades\FilamentView;
 use Filament\Support\Facades\FilamentColor;
+use Filament\Facades\Filament;
+use Filament\Navigation\NavigationGroup;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -44,6 +46,22 @@ class AppServiceProvider extends ServiceProvider
             'success' => Color::Green,
             'warning' => Color::Amber,
         ]);
+        Filament::serving(function () {
+            Filament::registerNavigationGroups([
+                NavigationGroup::make()
+                     ->label('PPDB')
+                     ->icon('heroicon-o-queue-list'),
+                NavigationGroup::make()
+                    ->label('Data Keuangan')
+                    ->icon('heroicon-o-banknotes'),
+                NavigationGroup::make()
+                    ->label('Manage Website')
+                    ->icon('heroicon-o-computer-desktop'),
+                NavigationGroup::make()
+                    ->label('Data Dasar')
+                    ->icon('heroicon-o-pencil'),
+            ]);
+        });
         require_once app_path('Helpers/Helpers.php');
     }
 }
