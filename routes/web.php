@@ -2,11 +2,12 @@
 
 use App\Models\Siswa;
 use App\Models\Tagihan;
+use App\Livewire\CreateTesfisik;
+use App\Livewire\CreatePendaftar;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KwitansiController;
 use App\Filament\Resources\PendaftaranResource\Pages\CreatePendaftaran;
-use App\Livewire\CreatePendaftar;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('form-pendaftaran', [HomeController::class, 'form'])->name('form.pendaftaran');
@@ -30,3 +31,4 @@ Route::get('/kwitansi/{pembayaran}/print', [KwitansiController::class, 'print'])
     ->middleware('auth');
     
 Route::get('pendaftaran', CreatePendaftar::class);
+Route::get('tesfisik', CreateTesfisik::class);
