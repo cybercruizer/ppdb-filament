@@ -132,9 +132,8 @@ class SiswaResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('id')
-                    ->sortable()
-                    ->searchable(),
+                Tables\Columns\TextColumn::make('No')
+                    ->rowIndex(),
                 Tables\Columns\TextColumn::make('nomor_pendaftaran')
                     ->sortable()
                     ->searchable()
@@ -146,25 +145,23 @@ class SiswaResource extends Resource
                     ->limit(30)
                     ->description(fn (Siswa $record): string => $record->catatan),
                 Tables\Columns\TextColumn::make('tempat_lahir')
-                    ->sortable()
-                    ->searchable(),
+                    ->sortable(),
                 Tables\Columns\TextColumn::make('tanggal_lahir')
                     ->date('d-m-Y')
                     ->sortable(),
                 Tables\Columns\TextColumn::make('jenis_kelamin')
                     ->sortable()
-                    ->searchable()
                     ->label('JK'),
                 Tables\Columns\TextColumn::make('asal_sekolah')
-                    ->sortable()
-                    ->searchable(),
+                    ->sortable(),
                 Tables\Columns\TextColumn::make('jurusan.kode_jurusan')
                     ->sortable()
-                    ->searchable()
                     ->label('Jurusan'),
-                Tables\Columns\TextColumn::make('namaTahun')
+                Tables\Columns\TextColumn::make('tahun_id')
+                    ->getStateUsing(function (Siswa $record) {
+                        return $record->tahun->nama_tahun;
+                    })
                     ->sortable()
-                    ->searchable()
                     ->label('Tahun Ajaran'),
                 Tables\Columns\TextColumn::make('created_at')
                     //make format date to d-m-Y
@@ -177,9 +174,9 @@ class SiswaResource extends Resource
             ])
             ->filters([
                 //make filter based on jurusan_id
-                Tables\Filters\SelectFilter::make('jurusan_id')
-                    ->relationship('jurusan', 'nama_jurusan')
-                    ->label('Jurusan'),
+                //Tables\Filters\SelectFilter::make('jurusan_id')
+                //    ->relationship('jurusan', 'nama_jurusan')
+                //    ->label('Jurusan'),
                 //make filter based on gelombang_id
                 Tables\Filters\SelectFilter::make('gelombang_id')
                     ->relationship('gelombang', 'nama_gelombang')

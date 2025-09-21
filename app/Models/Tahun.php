@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Models\Siswa;
 use App\Models\Tagihan;
+use App\Models\Gelombang;
 use App\Models\Pembayaran;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -37,5 +38,14 @@ class Tahun extends Model
     public function pembayarans(): HasManyThrough
     {
         return $this->hasManyThrough(Pembayaran::class, Tagihan::class);
+    }
+    /**
+     * Get all of the gelombangs for the Tahun
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function gelombangs(): HasMany
+    {
+        return $this->hasMany(Gelombang::class);
     }
 }

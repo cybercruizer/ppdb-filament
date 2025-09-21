@@ -92,6 +92,9 @@ class GelombangResource extends Resource
                     ->label('Status')
                     ->onColor('success')
                     ->offColor('danger')
+                    ->beforeStateUpdated(function (Gelombang $record) {
+                        Gelombang::where('id', '!=', $record->id)->update(['is_active' => false]);
+                    })
                     ->action(function (Gelombang $record, bool $state): void {
                         $record->update(['is_active' => $state]);
                     }),

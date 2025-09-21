@@ -1,0 +1,3334 @@
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      [2m+42 vendor frames [22m
+      Illuminate\Foundation\Application::handleCommand()
+
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+      [2m+42 vendor frames [22m
+
+
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+
+      [2m+42 vendor frames [22m
+      [2m+42 vendor frames [22m
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mariadb, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  /home/kurikulum/Site/kaido-kit/artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
+
+   UnexpectedValueException 
+
+  Invalid route action: [App\Livewire\CreatePendaftar].
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php:92
+     88▕      */
+     89▕     protected static function makeInvokable($action)
+     90▕     {
+     91▕         if (! method_exists($action, '__invoke')) {
+  ➜  92▕             throw new UnexpectedValueException("Invalid route action: [{$action}].");
+     93▕         }
+     94▕ 
+     95▕         return $action.'@__invoke';
+     96▕     }
+
+      [2m+8 vendor frames [22m
+
+  9   /home/kurikulum/Site/kaido-kit/routes/web.php:32
+      Illuminate\Support\Facades\Facade::__callStatic()
+      [2m+20 vendor frames [22m
+
+  30  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+
+   UnexpectedValueException 
+
+  Invalid route action: [App\Livewire\CreatePendaftar].
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php:92
+     88▕      */
+     89▕     protected static function makeInvokable($action)
+     90▕     {
+     91▕         if (! method_exists($action, '__invoke')) {
+  ➜  92▕             throw new UnexpectedValueException("Invalid route action: [{$action}].");
+     93▕         }
+     94▕ 
+     95▕         return $action.'@__invoke';
+     96▕     }
+
+      [2m+8 vendor frames [22m
+
+  9   /home/kurikulum/Site/kaido-kit/routes/web.php:32
+      Illuminate\Support\Facades\Facade::__callStatic()
+      [2m+20 vendor frames [22m
+
+  30  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+
+   UnexpectedValueException 
+
+  Invalid route action: [App\Livewire\CreatePendaftar].
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php:92
+     88▕      */
+     89▕     protected static function makeInvokable($action)
+     90▕     {
+     91▕         if (! method_exists($action, '__invoke')) {
+  ➜  92▕             throw new UnexpectedValueException("Invalid route action: [{$action}].");
+     93▕         }
+     94▕ 
+     95▕         return $action.'@__invoke';
+     96▕     }
+
+      [2m+8 vendor frames [22m
+
+  9   /home/kurikulum/Site/kaido-kit/routes/web.php:32
+      Illuminate\Support\Facades\Facade::__callStatic()
+      [2m+20 vendor frames [22m
+
+  30  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+
+
+   UnexpectedValueException 
+
+  Invalid route action: [App\Livewire\CreatePendaftar].
+
+  at /home/kurikulum/Site/kaido-kit/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php:92
+     88▕      */
+     89▕     protected static function makeInvokable($action)
+     90▕     {
+     91▕         if (! method_exists($action, '__invoke')) {
+  ➜  92▕             throw new UnexpectedValueException("Invalid route action: [{$action}].");
+     93▕         }
+     94▕ 
+     95▕         return $action.'@__invoke';
+     96▕     }
+
+      [2m+8 vendor frames [22m
+
+  9   /home/kurikulum/Site/kaido-kit/routes/web.php:32
+      Illuminate\Support\Facades\Facade::__callStatic()
+      [2m+20 vendor frames [22m
+
+  30  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}()
+

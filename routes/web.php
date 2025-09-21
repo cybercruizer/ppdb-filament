@@ -3,10 +3,15 @@
 use App\Models\Siswa;
 use App\Models\Tagihan;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\KwitansiController;
+use App\Filament\Resources\PendaftaranResource\Pages\CreatePendaftaran;
+use App\Livewire\CreatePendaftar;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('form-pendaftaran', [HomeController::class, 'form'])->name('form.pendaftaran');
+Route::post('form-pendaftaran', [HomeController::class, 'formStore'])->name('form.pendaftaran.store');
+
 Route::get('createSyncTagihan', function () {
     $id_siswa = Siswa::get()->pluck('id')->toArray();
     foreach ($id_siswa as $siswa) {
@@ -20,3 +25,8 @@ Route::get('createSyncTagihan', function () {
     return 'Tagihan berhasil dibuat dan siswa berhasil disinkronkan.';
     
 });
+Route::get('/kwitansi/{pembayaran}/print', [KwitansiController::class, 'print'])
+    ->name('kwitansi.print')
+    ->middleware('auth');
+    
+Route::get('pendaftaran', CreatePendaftar::class);

@@ -12,7 +12,12 @@ class Pembayaran extends Model
     //
 
     // add fillable
-    protected $fillable = [];
+    protected $fillable = [
+        'siswa_id',
+        'tagihan_id',
+        'jumlah_pembayaran',
+        'tanggal_pembayaran',
+    ];
     // add guaded
     protected $guarded = ['id'];
     // add hidden

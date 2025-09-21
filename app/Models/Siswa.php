@@ -19,11 +19,30 @@ class Siswa extends Model
     //
 
     // add fillable
-    protected $fillable = [];
+    protected $fillable = [
+        'nomor_pendaftaran',
+        'nama',
+        'tempat_lahir',
+        'tanggal_lahir',
+        'jenis_kelamin',
+        'no_telepon',
+        'asal_sekolah',
+        'nama_ayah',
+        'nama_ibu',
+        'alamat',
+        'catatan',
+        'tahun_id',
+        'jurusan_id',
+        'gelombang_id',
+    ];
     // add guaded
     protected $guarded = ['id'];
     // add hidden
     protected $hidden = ['created_at', 'updated_at'];
+
+    //protected $connection = 'db2';
+    //protected $table = 'siswas';
+    
 
     protected static function boot()
     {

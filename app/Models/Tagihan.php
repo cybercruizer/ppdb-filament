@@ -23,7 +23,12 @@ class Tagihan extends Model
         });
     }
     // add fillable
-    protected $fillable = [];
+    protected $fillable = [
+        'siswa_id',
+        'nama_tagihan',
+        'jumlah_tagihan',
+        'keterangan',
+    ];
     // add guaded
     protected $guarded = ['id'];
     // add hidden
@@ -60,6 +65,10 @@ class Tagihan extends Model
     public function getTerbayarAttribute()
     {
         return $this->pembayarans()->sum('jumlah_pembayaran');
+    }
+    public function getStatusAttribute()
+    {
+        return $this->pembayarans()->sum('jumlah_pembayaran') >= $this->jumlah_tagihan ? 'Lunas' : 'Belum Lunas';
     }
     
 }

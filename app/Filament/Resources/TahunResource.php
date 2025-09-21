@@ -47,7 +47,10 @@ class TahunResource extends Resource
                     ->sortable()
                     ->searchable(),
                 Tables\Columns\ToggleColumn::make('is_active')
-                    ->label('Aktif'),
+                    ->label('Aktif')
+                    ->beforeStateUpdated(function (Tahun $record) {
+                        Tahun::where('id', '!=', $record->id)->update(['is_active' => false]);
+                    }),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

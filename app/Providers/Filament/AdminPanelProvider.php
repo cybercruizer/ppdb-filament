@@ -2,36 +2,41 @@
 
 namespace App\Providers\Filament;
 
-use App\Filament\Pages\Login;
-use App\Models\User;
-use App\Settings\KaidoSetting;
-use Filament\Http\Middleware\Authenticate;
-use BezhanSalleh\FilamentShield\FilamentShieldPlugin;
-use DutchCodingCompany\FilamentSocialite\FilamentSocialitePlugin;
-use DutchCodingCompany\FilamentSocialite\Provider;
-use Filament\Forms\Components\FileUpload;
-use Filament\Http\Middleware\DisableBladeIconComponents;
-use Filament\Http\Middleware\DispatchServingFilamentEvent;
+use App\Filament\Pages\Dashboard;
 use Filament\Pages;
 use Filament\Panel;
-use Filament\PanelProvider;
-use Filament\Support\Colors\Color;
+use App\Models\User;
+use App\Models\Siswa;
 use Filament\Widgets;
-use Hasnayeen\Themes\Http\Middleware\SetTheme;
+use Filament\PanelProvider;
+use App\Filament\Pages\Login;
+use App\Filament\Pages\SiswaDashboard;
+use App\Settings\KaidoSetting;
+use Filament\Support\Colors\Color;
 use Hasnayeen\Themes\ThemesPlugin;
-use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
+use Illuminate\Support\Facades\Schema;
+use Filament\Forms\Components\FileUpload;
+use Rupadana\ApiService\ApiServicePlugin;
+use Filament\Http\Middleware\Authenticate;
+use Jeffgreco13\FilamentBreezy\BreezyCore;
+use Hasnayeen\Themes\Http\Middleware\SetTheme;
+use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Cookie\Middleware\EncryptCookies;
-use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
+use DutchCodingCompany\FilamentSocialite\Provider;
+use BezhanSalleh\FilamentShield\FilamentShieldPlugin;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
-use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
-use Jeffgreco13\FilamentBreezy\BreezyCore;
-use Rupadana\ApiService\ApiServicePlugin;
+use Filament\Http\Middleware\DisableBladeIconComponents;
+use Filament\Http\Middleware\DispatchServingFilamentEvent;
+use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
+use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
-use Illuminate\Contracts\Auth\Authenticatable;
-use Illuminate\Support\Facades\Schema;
+use App\Filament\Resources\SiswaResource\Widgets\SiswaOverview;
+use DutchCodingCompany\FilamentSocialite\FilamentSocialitePlugin;
+use App\Filament\Resources\JurusanResource\Widgets\JurusanOverview;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -55,23 +60,30 @@ class AdminPanelProvider extends PanelProvider
         return $panel
             ->default()
             ->id('admin')
-            ->path('adm')
+            ->path('admin')
             ->when($this->settings->login_enabled ?? true, fn($panel) => $panel->login(Login::class))
             ->when($this->settings->registration_enabled ?? true, fn($panel) => $panel->registration())
             ->when($this->settings->password_reset_enabled ?? true, fn($panel) => $panel->passwordReset())
             ->emailVerification()
             ->colors([
+                'danger' => Color::Red,
+                'gray' => Color::Zinc,
+                'info' => Color::Blue,
                 'primary' => Color::Amber,
+                'success' => Color::Green,  
+                'warning' => Color::Orange,
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([
-                Pages\Dashboard::class,
+                //Dashboard::class,
+                SiswaDashboard::class,
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
             ->widgets([
-                Widgets\AccountWidget::class,
-                Widgets\FilamentInfoWidget::class,
+                SiswaOverview::class,
+                //Widgets\AccountWidget::class,
+                //Widgets\FilamentInfoWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,
@@ -103,6 +115,7 @@ class AdminPanelProvider extends PanelProvider
             ThemesPlugin::make(),
             FilamentShieldPlugin::make(),
             ApiServicePlugin::make(),
+            \MarcoGermani87\FilamentCaptcha\FilamentCaptcha::make(),
             BreezyCore::make()
                 ->myProfile(
                     shouldRegisterUserMenu: true, // Sets the 'account' link in the panel User Menu (default = true)
