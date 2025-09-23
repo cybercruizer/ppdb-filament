@@ -146,7 +146,7 @@ class SiswaResource extends Resource
                     ->searchable()
                     //limit string to 50 character
                     ->limit(30)
-                    ->description(fn (Siswa $record): string => $record->catatan),
+                    ->description(fn (Siswa $record): string => $record->catatan??''),
                 Tables\Columns\TextColumn::make('tempat_lahir')
                     ->sortable(),
                 Tables\Columns\TextColumn::make('tanggal_lahir')
