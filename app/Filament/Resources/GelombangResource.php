@@ -2,16 +2,17 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\GelombangResource\Pages;
-use App\Filament\Resources\GelombangResource\RelationManagers;
-use App\Models\Gelombang;
 use Filament\Forms;
-use Filament\Forms\Form;
-use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Forms\Form;
+use App\Models\Gelombang;
 use Filament\Tables\Table;
+use Filament\Resources\Resource;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Database\Eloquent\Builder;
+use App\Filament\Resources\GelombangResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use App\Filament\Resources\GelombangResource\RelationManagers;
 
 class GelombangResource extends Resource
 {
@@ -97,7 +98,8 @@ class GelombangResource extends Resource
                     })
                     ->action(function (Gelombang $record, bool $state): void {
                         $record->update(['is_active' => $state]);
-                    }),
+                    })
+                    ->visible(fn () => Auth::user()?->can('edit_gelombang')),
                 Tables\Columns\TextColumn::make('biaya')
                     ->sortable()
                     ->searchable()

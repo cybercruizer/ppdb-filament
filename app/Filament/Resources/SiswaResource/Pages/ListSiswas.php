@@ -2,10 +2,12 @@
 
 namespace App\Filament\Resources\SiswaResource\Pages;
 
+use App\Filament\Exports\SiswaExporter;
 use App\Models\Siswa;
 use Filament\Actions;
 use Filament\Resources\Components\Tab;
 use App\Filament\Resources\SiswaResource;
+use Filament\Actions\ExportAction;
 use Filament\Resources\Pages\ListRecords;
 use Illuminate\Database\Eloquent\Builder;
 
@@ -17,7 +19,6 @@ class ListSiswas extends ListRecords
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
         ];
     }
     public function getTabs(): array

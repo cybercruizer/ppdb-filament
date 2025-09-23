@@ -45,6 +45,9 @@ class TagihanResource extends Resource
                     ->label('Nama Siswa')
                     ->searchable()
                     ->sortable(),
+                TextColumn::make('siswa.nomor_pendaftaran')
+                    ->label('Nomor Pendaftaran')
+                    ->searchable(),
                 TextColumn::make('jumlah_tagihan')
                     ->label('Jumlah Tagihan')
                     ->money('IDR')

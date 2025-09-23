@@ -14,6 +14,7 @@ class Post extends Model
     protected $fillable = [
         'title',
         'content',
+        'category'
     ];
     // add guaded
     protected $guarded = ['id'];

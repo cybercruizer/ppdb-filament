@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kwitansi Pembayaran - {{ $pembayaran->tagihan->siswa->nama }}</title>
+    <title>Kuitansi Pembayaran - {{ $pembayaran->tagihan->siswa->nama }}</title>
     <style>
         @page {
             size: A5 landscape;
@@ -253,7 +253,7 @@
     </style>
 </head>
 <body>
-    <button class="print-button" onclick="window.print()">🖨️ Print Kwitansi</button>
+    <button class="print-button" onclick="window.print()">🖨️ Print Kuitansi</button>
     
     <div class="kwitansi-container">
         <!-- Header/Kop Surat dengan Logo -->
@@ -276,7 +276,7 @@
         
         <!-- Judul Kwitansi -->
         <div class="kwitansi-title">
-            <h3>Kwitansi Pembayaran</h3>
+            <h3>Kuitansi Pembayaran</h3>
         </div>
         
         <!-- Nomor Kwitansi -->

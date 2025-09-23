@@ -11,11 +11,14 @@ use App\Models\Gelombang;
 use Filament\Tables\Table;
 use Filament\Support\RawJs;
 use Filament\Resources\Resource;
+use App\Filament\Exports\SiswaExporter;
+use Filament\Forms\Components\Tabs\Tab;
+use Filament\Tables\Actions\CreateAction;
+use Filament\Tables\Actions\ExportAction;
 use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\SiswaResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\SiswaResource\RelationManagers;
-use Filament\Forms\Components\Tabs\Tab;
 
 class SiswaResource extends Resource
 {
@@ -192,6 +195,14 @@ class SiswaResource extends Resource
                     ->openUrlInNewTab()
                     ->color('success'),
 
+            ])
+            ->headerActions([
+                CreateAction::make()
+                ->icon('heroicon-o-plus'),
+                ExportAction::make()
+                    ->exporter(SiswaExporter::class)
+                    ->columnMapping(false)
+                    ->icon('heroicon-o-arrow-down-tray')
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

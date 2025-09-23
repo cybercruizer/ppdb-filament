@@ -150,6 +150,17 @@ class CreatePendaftar extends Component implements HasForms
                         Textarea::make('catatan')
                             ->label('Catatan Tambahan')
                             ->columnSpanFull(),
+                        Select::make('informasi')
+                            ->label('Informasi tentang PPDB')
+                            ->options([
+                                'MS' => 'Media Sosial',
+                                'TM' => 'Teman',
+                                'TT' => 'Tetangga',
+                                'GR' => 'Guru',
+                                'SK' => 'Sekolah',
+                            ])
+                            ->required()
+                            ->placeholder('Pilih Sumber Informasi'),
                     ]),
                 CaptchaField::make('captcha'),
             ])

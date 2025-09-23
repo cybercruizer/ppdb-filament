@@ -155,7 +155,7 @@ class PembayaranResource extends Resource
                     ->visible(fn () => auth()->user()->can('delete_any_pembayaran')),
                 // Print Receipt Action
                 Action::make('print_kwitansi')
-                    ->label('Print Kwitansi')
+                    ->label('Print Kuitansi')
                     ->icon('heroicon-o-printer')
                     ->color('success')
                     ->url(fn(Pembayaran $record): string => route('kwitansi.print', $record))
