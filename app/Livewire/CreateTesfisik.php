@@ -149,6 +149,7 @@ class CreateTesfisik extends Component implements HasForms
                             'L' => 'L',
                             'XL' => 'XL',
                             'XXL' => 'XXL',
+                            'XXXL' => 'XXXL',
                         ])
                         ->required(),
                     Textarea::make('akademik')

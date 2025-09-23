@@ -12,7 +12,7 @@ class HomeController extends Controller
         $posts = \App\Models\Post::latest()->take(3)->get();
         $ta= Tahun::where('is_active',true)->first();
         return view('ppdb', [
-            'title' => 'PPDB '.$ta->nama_tahun,
+            'title' => 'SPMB '.$ta->nama_tahun,
             'posts' => $posts,
         ]);
     }

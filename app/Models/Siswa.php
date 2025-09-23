@@ -111,5 +111,9 @@ class Siswa extends Model
     {
         return $this->belongsTo(Tahun::class);
     }
+    public function getSudahtesfisikAttribute()
+    {
+        return $this->tesfisik()->exists();
+    }
     
 }

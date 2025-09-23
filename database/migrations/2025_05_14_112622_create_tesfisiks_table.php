@@ -23,7 +23,7 @@ return new class extends Migration
             $table->enum('disabilitas', ['N', 'TW','TR','TN','TD','TG']);
             $table->enum('ibadah',['B','C','K']);
             $table->enum('alquran',['S','B','T']);
-            $table->enum('ukuran_baju',['S','M','L','XL','XXL']);
+            $table->enum('ukuran_baju',['S','M','L','XL','XXL','XXXL']);
             $table->text('akademik')->nullable();
             $table->text('non_akademik')->nullable();
             $table->timestamps();

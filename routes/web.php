@@ -34,3 +34,10 @@ Route::get('/kwitansi/{pembayaran}/print', [KwitansiController::class, 'print'])
 Route::get('pendaftaran', CreatePendaftar::class);
 Route::get('tesfisik', CreateTesfisik::class);
 Route::get('/post/{id}',[PostController::class,'show'])->name('post.view');
+Route::get('/tespengumuman/{id}', function () {
+    $siswa=Siswa::find(request('id'));
+    return view('pengumuman', ['siswa'=>$siswa]);
+})->name('tes.pengumuman');
+Route::get('/cekstatus', function() {
+    return view('cekstatus');
+});

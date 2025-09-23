@@ -19,6 +19,7 @@ use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\SiswaResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\SiswaResource\RelationManagers;
+use Filament\Tables\Columns\IconColumn;
 
 class SiswaResource extends Resource
 {
@@ -160,12 +161,19 @@ class SiswaResource extends Resource
                 Tables\Columns\TextColumn::make('jurusan.kode_jurusan')
                     ->sortable()
                     ->label('Jurusan'),
-                Tables\Columns\TextColumn::make('tahun_id')
-                    ->getStateUsing(function (Siswa $record) {
-                        return $record->tahun->nama_tahun;
-                    })
-                    ->sortable()
-                    ->label('Tahun Ajaran'),
+                IconColumn::make('sudahtesfisik')
+                    ->boolean()
+                    ->label('Tes Fisik')
+                    ->trueIcon('heroicon-o-check-circle')
+                    ->falseIcon('heroicon-o-x-circle')
+                    ->trueColor('success')
+                    ->falseColor('danger'),
+                // Tables\Columns\TextColumn::make('tahun_id')
+                //     ->getStateUsing(function (Siswa $record) {
+                //         return $record->tahun->nama_tahun;
+                //     })
+                //     ->sortable()
+                //     ->label('Tahun Ajaran'),
                 Tables\Columns\TextColumn::make('created_at')
                     //make format date to d-m-Y
                     ->date('d-m-Y')
@@ -194,6 +202,11 @@ class SiswaResource extends Resource
                     ->icon('heroicon-o-paper-airplane')
                     ->openUrlInNewTab()
                     ->color('success'),
+                Tables\Actions\Action::make('print')
+                    ->url(fn (Siswa $record): string => route('tes.pengumuman', ['id' => $record->id]))
+                    ->icon('heroicon-o-printer')
+                    ->openUrlInNewTab()
+                    ->color('primary'),
 
             ])
             ->headerActions([
