@@ -18,6 +18,14 @@ class TagihanExporter extends Exporter
                 ->label('Nomor Pendaftaran'),
             ExportColumn::make('siswa.nama')
                 ->label('Nama Siswa'),
+            ExportColumn::make('siswa.asal_sekolah')
+                ->label('Asal Sekolah'),
+            ExportColumn::make('siswa.no_telepon')
+                ->label('Nomor Telepon'),
+            ExportColumn::make('siswa.no_telepon_ortu')
+                ->label('Nomor Telepon Orang Tua'),
+            ExportColumn::make('siswa.jurusan.kode_jurusan')
+                ->label('Jurusan'),
             ExportColumn::make('siswa.gelombang.nama_gelombang')
                 ->label('Gelombang'),
             ExportColumn::make('jumlah_tagihan')

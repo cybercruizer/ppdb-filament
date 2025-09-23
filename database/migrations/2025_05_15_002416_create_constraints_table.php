@@ -26,7 +26,7 @@ return new class extends Migration
             $table->foreignId('tagihan_id')->constrained('tagihans')->onDelete('cascade');
         });
         Schema::table('tesfisiks', function (Blueprint $table) {       
-            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
+            //$table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->foreignId('siswa_id')->constrained('siswas')->onDelete('cascade');
         });
         Schema::table('gelombangs', function (Blueprint $table) {       

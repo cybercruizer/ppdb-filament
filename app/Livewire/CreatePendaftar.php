@@ -94,7 +94,10 @@ class CreatePendaftar extends Component implements HasForms
                             ->label('Nama Lengkap')
                             ->required()
                             ->maxLength(255),
-
+                        TextInput::make('asal_sekolah')
+                            ->label('Asal Sekolah/SMP/MTs')
+                            ->required()
+                            ->maxLength(255),
                         TextInput::make('tempat_lahir')
                             ->label('Tempat Lahir')
                             ->required()
@@ -114,19 +117,20 @@ class CreatePendaftar extends Component implements HasForms
                             ->required(),
 
                         TextInput::make('no_telepon')
-                            ->label('No. Telepon/HP')
+                            ->label('No. Telepon/HP calon murid')
                             ->tel()
                             ->required()
                             ->maxLength(15),
+                        Textarea::make('alamat')
+                            ->label('Alamat Lengkap calon murid')
+                            ->required()
+                            ->columnSpanFull(),
                     ])
                     ->columns(2),
 
-                Section::make('Data Sekolah dan Orang Tua')
+                Section::make('Data Orang Tua')
                     ->schema([
-                        TextInput::make('asal_sekolah')
-                            ->label('Asal Sekolah')
-                            ->required()
-                            ->maxLength(255),
+
 
                         TextInput::make('nama_ayah')
                             ->label('Nama Ayah')
@@ -137,16 +141,21 @@ class CreatePendaftar extends Component implements HasForms
                             ->label('Nama Ibu')
                             ->required()
                             ->maxLength(255),
+
+                        TextInput::make('no_telepon_ortu')
+                            ->label('No. Telepon/HP Orang Tua/Wali')
+                            ->tel()
+                            ->required()
+                            ->maxLength(15),
+                        TextArea::make('alamat_ortu')
+                            ->label('Alamat Orang Tua/Wali')
+                            ->columnSpanFull()
+                            ->maxLength(255),
                     ])
                     ->columns(2),
 
-                Section::make('Alamat dan Informasi Tambahan')
+                Section::make('Informasi Tambahan')
                     ->schema([
-                        Textarea::make('alamat')
-                            ->label('Alamat Lengkap')
-                            ->required()
-                            ->columnSpanFull(),
-
                         Textarea::make('catatan')
                             ->label('Catatan Tambahan')
                             ->columnSpanFull(),
@@ -162,7 +171,12 @@ class CreatePendaftar extends Component implements HasForms
                             ->required()
                             ->placeholder('Pilih Sumber Informasi'),
                     ]),
-                CaptchaField::make('captcha'),
+                Section::make('Kode Pengaman')
+                    ->schema([
+                        CaptchaField::make('captcha')
+                        ->label('Silakan isi kode pengaman ini untuk melanjutkan.')
+                        ->required(),
+                    ])->columns(2),
             ])
             ->statePath('data');
     }

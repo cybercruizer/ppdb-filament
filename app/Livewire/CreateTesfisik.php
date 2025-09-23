@@ -7,10 +7,11 @@ use App\Models\Tahun;
 use App\Models\Jurusan;
 use App\Models\Tagihan;
 use Livewire\Component;
+use App\Models\Tesfisik;
 use Filament\Forms\Form;
 use App\Models\Gelombang;
-use App\Models\Tesfisik;
 use Illuminate\Contracts\View\View;
+use Illuminate\Support\Facades\Auth;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Contracts\HasForms;
@@ -132,6 +133,14 @@ class CreateTesfisik extends Component implements HasForms
                             'T' => 'Tidak Bisa',
                         ])
                         ->required(),
+                    Select::make('membaca')
+                        ->label('Kemampuan Membaca')
+                        ->options([
+                            'L' => 'Lancar',
+                            'KL' => 'Kurang Lancar',
+                            'TB' => 'Tidak Bisa',
+                        ])
+                        ->required(),
                     Select::make('ukuran_baju')
                         ->label('Ukuran Baju')
                         ->options([
@@ -144,12 +153,14 @@ class CreateTesfisik extends Component implements HasForms
                         ->required(),
                     Textarea::make('akademik')
                         ->label('Prestasi Akademik')
-                        ->nullable(),
+                        ->nullable()
+                        ->columnSpanFull(),
                     Textarea::make('non_akademik')
                         ->label('Prestasi Non Akademik')
-                        ->nullable(),
+                        ->nullable()
+                        ->columnSpanFull(),
                 ])
-                ->columns(3),
+                ->columns(2),
                 CaptchaField::make('captcha'),
             ])
             ->statePath('data');
@@ -159,6 +170,7 @@ class CreateTesfisik extends Component implements HasForms
     {
         $data = $this->form->getState();
         //dd($data);
+        // $data['user_id'] = Auth::user()->id;
 
         $tesfisik = Tesfisik::create($data);
         //input to tagihan

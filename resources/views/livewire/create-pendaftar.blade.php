@@ -24,7 +24,7 @@
                     </div>
                     
                     <!-- Submit Button -->
-                    <div class="flex justify-end pt-6"> <!-- Increased padding -->
+                    <div class="flex justify-center pb-6 pt-4"> <!-- Increased padding -->
                         <button type="submit" class="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 text-lg"> <!-- Larger text -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
