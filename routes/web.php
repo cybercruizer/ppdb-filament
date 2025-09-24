@@ -11,6 +11,7 @@ use App\Filament\Resources\PendaftaranResource\Pages\CreatePendaftaran;
 use App\Http\Controllers\PostController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/informasi',[HomeController::class, 'informasi'])->name('berita');
 Route::get('form-pendaftaran', [HomeController::class, 'form'])->name('form.pendaftaran');
 Route::post('form-pendaftaran', [HomeController::class, 'formStore'])->name('form.pendaftaran.store');
 

@@ -47,6 +47,18 @@ class SiswaResource extends Resource
                     ->maxLength(15)
                     ->unique(ignoreRecord: true)
                     ->label('Nomor Pendaftaran'),
+                Forms\Components\Select::make('kategori')
+                    ->options([
+                        'REG'=>'Reguler',
+                        'AP50' => 'AP 50%',
+                        'AP100'=> 'AP 100%',
+                        'KB'=>'Kakak Beradik',
+                        'KM'=>'Kembar',
+                        'AUM'=>'Pegawai AUM',
+                        'PDK'=> 'Pondok'
+                    ])
+                    ->required()
+                    ->label('Kategori'),
                 Forms\Components\TextInput::make('nama')
                     ->required()
                     ->maxLength(255),

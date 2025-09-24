@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('siswas', function (Blueprint $table) {
-            $table->enum('informasi',['MS','TM','TT','GR','SK'])->after('asal_sekolah')->nullable()->comment('MS: Media Sosial, TM: Teman, TT: Tetangga, GR: Guru, SK: Sekolah');
+            $table->enum('informasi',['MS','TM','TT','GR','SK','L'])->after('asal_sekolah')->nullable()->comment('MS: Media Sosial, TM: Teman, TT: Tetangga, GR: Guru, SK: Sekolah, L: Lainnya');
         });
     }
 

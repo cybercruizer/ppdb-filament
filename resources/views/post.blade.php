@@ -1,7 +1,17 @@
 @extends('components.layouts.page')
 @section('content')
+    <style>
+        .card-body {
+            font-size: 14pt;
+            padding: 20px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
     <!-- News Section -->
-    <section class="news" id="berita" style="margin-top: 80px;">
+    <section class="news" id="berita" style="margin-top: 100px;">
         <div class="container">
             <h2 class="section-title animate-on-scroll">{{$post->title}}</h2>
             <div class="subtitle">
@@ -11,7 +21,7 @@
             </div>
 
             <div class="card-body">
-                {!!$post->content!!}
+                <p>{!!$post->content!!}</p>
             </div>
         </div>
     </section>

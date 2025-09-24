@@ -268,7 +268,7 @@
 
         .btn-primary {
             background: linear-gradient(135deg, #4CAF50, #2E7D32);
-            color: white;
+            color: white !important;
             box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
         }
 
@@ -564,11 +564,11 @@
             </a>
 
             <ul class="nav-menu">
-                <li><a href="/">Beranda</a></li>
                 <li><a href="/#tentang">Tentang</a></li>
                 <li><a href="/#jurusan">Jurusan</a></li>
-                <li><a href="/#berita">Berita</a></li>
+                <li><a href="/informasi">Informasi</a></li>
                 <li><a href="/#kontak">Kontak</a></li>
+                <li><a href="/pendaftaran" class="btn btn-primary">Daftar Sekarang</a></li>
                 {{-- <li><a href="/pendaftaran" class="btn btn-primary" style="padding: 0.5rem 1.5rem;">Daftar PPDB</a></li> --}}
             </ul>
 
@@ -583,7 +583,6 @@
     <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
         <ul class="sidebar-menu">
-            <li><a href="#home">Beranda</a></li>
             <li><a href="#tentang">Tentang</a></li>
             <li><a href="#jurusan">Jurusan</a></li>
             <li><a href="#berita">Berita</a></li>

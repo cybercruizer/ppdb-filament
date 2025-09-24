@@ -17,7 +17,7 @@
         }
         
         body {
-            font-family: 'Times New Roman', serif;
+            font-family: 'Helvetica', Sans-serif;
             font-size: 12px;
             line-height: 1.4;
             color: #000;
@@ -29,7 +29,7 @@
             max-width: 210mm;
             margin: 0 auto;
             padding: 15px;
-            border: 2px solid #000;
+            /* border: 2px solid #000; */
             min-height: 130mm;
         }
         
@@ -49,17 +49,17 @@
         .logo {
             width: 70px;
             height: 70px;
-            border: 1px solid #ddd;
+            /* border: 1px solid #ddd; */
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #f8f8f8;
+            /* background-color: #f8f8f8; */
         }
         
         .logo-placeholder {
             font-size: 10px;
             text-align: center;
-            color: #666;
+            /* color: #666; */
         }
         
         .header-info {
@@ -80,7 +80,7 @@
         }
         
         .header-info p {
-            font-size: 11px;
+            font-size: 12px;
             margin-bottom: 3px;
         }
         
@@ -232,7 +232,7 @@
             }
             
             .kwitansi-container {
-                border: 1px solid #000;
+                border: 1px solid #303030;
                 margin: 0;
                 padding-top: 5px;
                 padding-left: 10px;
@@ -271,9 +271,9 @@
                 </div>
             </div>
             <div class="header-info">
-                <h1>SMK Muhammadiyah Mungkid</h1>
-                <p>Jl. Pemandian, Blabak, Mungkid, Magelang</p>
-                <p>Telp:(0293) 123456| Email: smkmuhmungkid@gmail.com</p>
+                <h1>{{$pengaturan->where('key','nama_sekolah')->value('value')}}</h1>
+                <p>{{$pengaturan->where('key','alamat_sekolah')->value('value')}}</p>
+                <p>Telp:{{$pengaturan->where('key','no_telp_sekolah')->value('value')}} | Email: {{$pengaturan->where('key','email_sekolah')->value('value')}}</p>
             </div>
         </div>
         

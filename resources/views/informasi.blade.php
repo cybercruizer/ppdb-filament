@@ -1,26 +1,15 @@
 @extends('components.layouts.page')
 @section('content')
-<!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>{{$title}}</h1>
-            <p class="hero-subtitle">{{$pengaturan->where('key','nama_sekolah')->value('value')}} - {{$pengaturan->where('key','slogan_sekolah')->value('value')}}</p>
-
-            <div class="cta-buttons">
-                <a href="/pendaftaran" class="btn btn-primary">
-                    <i class="fas fa-user-plus"></i> Daftar Sekarang
-                </a>
-                <a href="#tentang" class="btn btn-secondary">
-                    <i class="fas fa-info-circle"></i> Pelajari Lebih Lanjut
-                </a>
-            </div>
-        </div>
-    </section>
-
+    <style>
+        .card-body {
+            font-size: 14pt;
+            padding: 20px;
+        }
+    </style>
     <!-- News Section -->
-    <section class="news" id="berita">
+    <section class="news" id="berita" style="margin-top: 100px;">
         <div class="container">
-            <h2 class="section-title animate-on-scroll">Berita & Pengumuman</h2>
+            <h2 class="section-title animate-on-scroll">Informasi</h2>
 
             <div class="news-grid">
                 @forelse ($posts as $post)
@@ -37,7 +26,6 @@
                 @empty
                     <p class="animate-on-scroll">Belum ada berita terbaru.</p>
                 @endforelse
-
             </div>
         </div>
     </section>

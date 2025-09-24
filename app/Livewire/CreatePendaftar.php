@@ -79,8 +79,20 @@ class CreatePendaftar extends Component implements HasForms
                                     $set('nomor_pendaftaran', $kode);
                                 }
                             }),
+                        Select::make('kategori')
+                            ->options([
+                                'REG' => 'Reguler',
+                                'AP50' => 'AP 50%',
+                                'AP100' => 'AP 100%',
+                                'KB' => 'Kakak Beradik',
+                                'KM' => 'Kembar',
+                                'AUM' => 'Pegawai AUM',
+                                'PDK' => 'Pondok'
+                            ])
+                            ->required()
+                            ->label('Kategori'),
                     ])
-                    ->columns(3),
+                    ->columns(2),
 
                 Section::make('Data Pribadi')
                     ->schema([
@@ -174,8 +186,8 @@ class CreatePendaftar extends Component implements HasForms
                 Section::make('Kode Pengaman')
                     ->schema([
                         CaptchaField::make('captcha')
-                        ->label('Silakan isi kode pengaman ini untuk melanjutkan.')
-                        ->required(),
+                            ->label('Silakan isi kode pengaman ini untuk melanjutkan.')
+                            ->required(),
                     ])->columns(2),
             ])
             ->statePath('data');
@@ -187,16 +199,16 @@ class CreatePendaftar extends Component implements HasForms
         //dd($data);
 
         $pendaftaran = Siswa::create($data);
-        if($pendaftaran->jenis_kelamin=='L'){
-            $du=Gelombang::find($data['gelombang_id'])->biaya;
+        if ($pendaftaran->jenis_kelamin == 'L') {
+            $du = Gelombang::find($data['gelombang_id'])->biaya;
         } else {
-            $du=Gelombang::find($data['gelombang_id'])->biaya+100000;
+            $du = Gelombang::find($data['gelombang_id'])->biaya + 100000;
         }
         //input to tagihan
         Tagihan::create([
-           'siswa_id' => $pendaftaran->id,
-           'nama_tagihan' => 'PPDB',
-           'jumlah_tagihan' => $du,
+            'siswa_id' => $pendaftaran->id,
+            'nama_tagihan' => 'PPDB',
+            'jumlah_tagihan' => $du,
         ]);
 
         Notification::make()

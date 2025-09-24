@@ -85,7 +85,7 @@
     <p>
       Berdasarkan hasil seleksi Tes Fisik Sistem Penerimaan Murid Baru (SPMB) 
       SMK Muhammadiyah Mungkid Tahun Pelajaran {{$siswa->tahun->nama_tahun}}, dengan ini kami 
-      mengumumkan bahwa <strong>{{$siswa->nama}}</strong>,
+      mengumumkan bahwa <strong>{{$siswa->nama}}</strong> ({{$siswa->nomor_pendaftaran}}),
       dinyatakan <strong>DITERIMA</strong> sebagai calon siswa SMK Muhammadiyah Mungkid.
     </p>
     <p>

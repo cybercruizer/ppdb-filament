@@ -17,6 +17,7 @@ class KwitansiController extends Controller
         $tahunaktif=Tahun::where('is_active',true)->first();
         //$bendahara = PengaturanWebsite::where('key', 'nama_bendahara')->first();
         $bendahara=Auth::user()->name;
+        $pengaturan=PengaturanWebsite::all();
         //dd($bendahara);
         //dd($pembayaran);
         
@@ -28,6 +29,6 @@ class KwitansiController extends Controller
         // Tentukan status pembayaran
         $status = $sisaTagihan <= 0 ? 'LUNAS' : 'KURANG Rp ' . number_format($sisaTagihan, 0, ',', '.');
         
-        return view('kwitansi.print', compact('pembayaran', 'status', 'sisaTagihan', 'totalTagihan', 'totalPembayaran','tahunaktif','bendahara'));
+        return view('kwitansi.print', compact('pembayaran', 'status', 'sisaTagihan', 'totalTagihan', 'totalPembayaran','tahunaktif','bendahara','pengaturan'));
     }
 }
