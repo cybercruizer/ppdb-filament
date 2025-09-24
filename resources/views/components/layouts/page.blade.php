@@ -4,10 +4,11 @@
     use App\Models\PengaturanWebsite;
     $pengaturan = PengaturanWebsite::all();
 @endphp
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPMB {{$pengaturan->where('key','nama_sekolah')->value('value')}}</title>
+    <title>SPMB {{ $pengaturan->where('key', 'nama_sekolah')->value('value') }}</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
         * {
@@ -50,9 +51,9 @@
             top: 0;
             left: 0;
             right: 0;
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(203, 213, 225, 0.3);
             z-index: 1000;
             padding: 1rem 0;
@@ -61,7 +62,9 @@
         }
 
         .navbar.scrolled {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             padding: 0.5rem 0;
         }
 
@@ -92,7 +95,7 @@
         .logo-icon {
             width: 40px;
             height: 40px;
-            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            /* background: linear-gradient(135deg, #4CAF50, #2E7D32); */
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -108,11 +111,17 @@
             gap: 2rem;
             margin: 0;
         }
+        .nav-menu .btn-primary:hover {
+            color: rgb(15, 63, 0) !important;
+            border: #2e7d32!important;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+            
+        }
 
         .nav-menu a {
-            color: #475569;
+            color: #074e0d;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 800;
             padding: 0.5rem 1rem;
             border-radius: 25px;
             transition: all 0.3s ease;
@@ -204,10 +213,11 @@
             text-align: center;
             padding: 0 2rem;
             margin-top: 5rem;
-            background: linear-gradient(135deg, #e0f7fa 0%, #c8e6c9 50%);
+            /* background: linear-gradient(135deg, #e0f7fa 0%, #c8e6c9 50%); */
             position: relative;
             overflow: hidden;
         }
+
         .hero::before {
             content: '';
             position: absolute;
@@ -216,13 +226,19 @@
             width: 100%;
             height: 100%;
             background: url('/img/bg.jpg');
-            opacity: 0.2;
+            opacity: 0.8;
             pointer-events: none;
             z-index: 0;
         }
+
         .hero-content {
             position: relative;
             z-index: 1;
+            padding: 2rem;
+            border-radius: 5%;
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
         }
 
         .hero-content {
@@ -233,7 +249,7 @@
         .hero h1 {
             font-size: 3.5rem;
             font-weight: 800;
-            color: #1e293b;
+            color: #f7f7f7;
             margin-bottom: 1rem;
             line-height: 1.2;
             text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -241,7 +257,7 @@
 
         .hero-subtitle {
             font-size: 1.25rem;
-            color: #475569;
+            color: #ffffff;
             margin-bottom: 2rem;
             font-weight: 400;
         }
@@ -271,6 +287,7 @@
             color: white !important;
             box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
         }
+        
 
         .btn-secondary {
             background: rgba(255, 255, 255, 0.8);
@@ -532,7 +549,396 @@
             .navbar-container {
                 padding: 0 1rem;
             }
+
+            .jurusan {
+                margin: 1rem;
+                padding: 3rem 1.5rem;
+            }
+
+            .jurusan-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .jurusan-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .timeline-section {
+                margin: 1rem;
+                padding: 3rem 1rem;
+            }
+
+            .timeline-line {
+                left: 30px;
+            }
+
+            .timeline-marker {
+                left: 30px;
+            }
+
+            .timeline-content {
+                margin-left: 70px;
+                padding: 1.5rem;
+            }
+
+            .timeline-content::before {
+                top: 25px;
+                left: -10px;
+            }
+
+            .timeline-title {
+                font-size: 1.3rem;
+            }
+
+            .marker-circle {
+                width: 25px;
+                height: 25px;
+            }
+
+            .marker-pulse {
+                width: 40px;
+                height: 40px;
+            }
         }
+
+        /* Jurusan Section */
+        .jurusan {
+            padding: 5rem 2rem;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            margin: 2rem;
+            border-radius: 30px;
+            border: 1px solid rgba(203, 213, 225, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .jurusan-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .jurusan-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            border: 1px solid rgba(203, 213, 225, 0.3);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .jurusan-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #4CAF50, #2E7D32);
+        }
+
+        .jurusan-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        .jurusan-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .jurusan-card:hover .jurusan-icon {
+            transform: scale(1.1);
+            box-shadow: 0 12px 25px rgba(76, 175, 80, 0.4);
+        }
+
+        .jurusan-card h3 {
+            color: #1e293b;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .jurusan-card p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .btn-jurusan {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            border: 2px solid #4CAF50;
+            transition: all 0.3s ease;
+            background: transparent;
+        }
+
+        .btn-jurusan:hover {
+            background: #4CAF50;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3);
+        }
+
+        /* Timeline Section */
+        .timeline-section {
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            margin: 2rem;
+            border-radius: 30px;
+            border: 1px solid rgba(203, 213, 225, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-container {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 0;
+        }
+
+        .timeline-line {
+            position: absolute;
+            top: 0;
+            left: 50px;
+            /* Posisi garis di sebelah kiri */
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, #4CAF50, #2E7D32);
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 4rem;
+            display: flex;
+            align-items: center;
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.6s ease;
+        }
+
+        .timeline-item.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: 50px;
+            /* Sesuaikan dengan posisi timeline-line */
+            transform: translateX(-50%);
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .marker-circle {
+            width: 30px;
+            height: 30px;
+            background: #4CAF50;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+            position: relative;
+            z-index: 2;
+        }
+
+        .marker-pulse {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            background: #4CAF50;
+            border-radius: 50%;
+            opacity: 0.3;
+            animation: pulse 2s infinite;
+            z-index: 1;
+        }
+
+        /* Warna khusus untuk gelombang Inden */
+        .timeline-item:nth-child(1) .marker-circle,
+        .timeline-item:nth-child(1) .marker-pulse {
+            background: #FF9800;
+            box-shadow: 0 4px 15px rgba(255, 152, 0, 0.4);
+        }
+
+        .timeline-content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(203, 213, 225, 0.3);
+            margin-left: 100px;
+            /* Jarak dari marker */
+            flex: 1;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .timeline-content::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: -10px;
+            width: 20px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            transform: rotate(45deg);
+            border-left: 1px solid rgba(203, 213, 225, 0.3);
+            border-bottom: 1px solid rgba(203, 213, 225, 0.3);
+        }
+
+        .timeline-date {
+            color: #4CAF50;
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .timeline-date::before {
+            content: '📅';
+            font-size: 0.9rem;
+        }
+
+        .timeline-title {
+            color: #1e293b;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .timeline-badge {
+            display: inline-block;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .timeline-badge.early {
+            background: linear-gradient(135deg, #FF9800, #F57C00);
+            color: white;
+        }
+
+        .timeline-badge.regular {
+            background: linear-gradient(135deg, #2196F3, #1976D2);
+            color: white;
+        }
+
+        .timeline-badge.special {
+            background: linear-gradient(135deg, #9C27B0, #7B1FA2);
+            color: white;
+        }
+
+        .timeline-description {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .timeline-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .timeline-status.active {
+            background: rgba(76, 175, 80, 0.1);
+            color: #2E7D32;
+            border: 1px solid rgba(76, 175, 80, 0.3);
+        }
+
+        .timeline-status.upcoming {
+            background: rgba(33, 150, 243, 0.1);
+            color: #1976D2;
+            border: 1px solid rgba(33, 150, 243, 0.3);
+        }
+
+        .timeline-status.completed {
+            background: rgba(158, 158, 158, 0.1);
+            color: #616161;
+            border: 1px solid rgba(158, 158, 158, 0.3);
+        }
+
+        .timeline-cta {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(203, 213, 225, 0.3);
+        }
+
+        .timeline-cta p {
+            color: #1e293b;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.3;
+            }
+
+            50% {
+                transform: translate(-50%, -50%) scale(1.2);
+                opacity: 0.1;
+            }
+
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.3;
+            }
+        }
+
+        /* Mobile Responsive */
 
         @media (max-width: 480px) {
             .hero {
@@ -558,7 +964,8 @@
         <div class="navbar-container">
             <a href="/" class="logo">
                 <div class="logo-icon">
-                    <i class="fas fa-graduation-cap"></i>
+                    <img src="/img/logo.png" alt="logo smk muh mungkid" style="width: 40px; height: 40px;">
+                    {{-- <i class="fas fa-graduation-cap"></i> --}}
                 </div>
                 <span>SMK Muhammadiyah Mungkid</span>
             </a>
@@ -568,7 +975,7 @@
                 <li><a href="/#jurusan">Jurusan</a></li>
                 <li><a href="/informasi">Informasi</a></li>
                 <li><a href="/#kontak">Kontak</a></li>
-                <li><a href="/pendaftaran" class="btn btn-primary">Daftar Sekarang</a></li>
+                <li><a href="/pendaftaran" class="btn-primary">Daftar Sekarang</a></li>
                 {{-- <li><a href="/pendaftaran" class="btn btn-primary" style="padding: 0.5rem 1.5rem;">Daftar PPDB</a></li> --}}
             </ul>
 
@@ -587,31 +994,36 @@
             <li><a href="#jurusan">Jurusan</a></li>
             <li><a href="#berita">Berita</a></li>
             <li><a href="#kontak">Kontak</a></li>
-            <li><a href="#ppdb">Daftar PPDB</a></li>
+            <li><a href="#ppdb">Daftar Sekarang</a></li>
         </ul>
     </div>
-    
+
     @yield('content')
 
     <!-- Footer -->
     <footer class="footer" id="kontak">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>{{$pengaturan->where('key','nama_sekolah')->value('value')}}</h3>
-                <p>{{$pengaturan->where('key','slogan_sekolah')->value('value')}}</p>
+                <h3>{{ $pengaturan->where('key', 'nama_sekolah')->value('value') }}</h3>
+                <p>{{ $pengaturan->where('key', 'slogan_sekolah')->value('value') }}</p>
                 <div class="social-links">
-                    <a href="{{$pengaturan->where('key','fb_sekolah')->value('value')}}"><i class="fab fa-facebook-f"></i></a>
-                    <a href="{{$pengaturan->where('key','ig_sekolah')->value('value')}}"><i class="fab fa-instagram"></i></a>
-                    <a href="{{$pengaturan->where('key','yt_sekolah')->value('value')}}"><i class="fab fa-youtube"></i></a>
-                    <a href="https://wa.me/{{$pengaturan->where('key','wa_sekolah')->value('value')}}"><i class="fab fa-whatsapp"></i></a>
+                    <a href="{{ $pengaturan->where('key', 'fb_sekolah')->value('value') }}"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="{{ $pengaturan->where('key', 'ig_sekolah')->value('value') }}"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="{{ $pengaturan->where('key', 'yt_sekolah')->value('value') }}"><i
+                            class="fab fa-youtube"></i></a>
+                    <a href="https://wa.me/{{ $pengaturan->where('key', 'wa_sekolah')->value('value') }}"><i
+                            class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
 
             <div class="footer-section">
                 <h3>Kontak</h3>
-                <p><i class="fas fa-map-marker-alt"></i> {{$pengaturan->where('key','alamat_sekolah')->value('value')}}</p>
-                <p><i class="fas fa-phone"></i> {{$pengaturan->where('key','no_telp_sekolah')->value('value')}}</p>
-                <p><i class="fas fa-envelope"></i> {{$pengaturan->where('key','email_sekolah')->value('value')}}</p>
+                <p><i class="fas fa-map-marker-alt"></i>
+                    {{ $pengaturan->where('key', 'alamat_sekolah')->value('value') }}</p>
+                <p><i class="fas fa-phone"></i> {{ $pengaturan->where('key', 'no_telp_sekolah')->value('value') }}</p>
+                <p><i class="fas fa-envelope"></i> {{ $pengaturan->where('key', 'email_sekolah')->value('value') }}</p>
             </div>
 
             <div class="footer-section">
@@ -624,7 +1036,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2025 {{$pengaturan->where('key','nama_sekolah')->value('value')}}. All rights reserved.</p>
+            <p>&copy; 2025 {{ $pengaturan->where('key', 'nama_sekolah')->value('value') }}. All rights reserved.</p>
         </div>
     </footer>
 
