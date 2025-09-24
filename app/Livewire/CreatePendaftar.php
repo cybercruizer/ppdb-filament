@@ -187,11 +187,16 @@ class CreatePendaftar extends Component implements HasForms
         //dd($data);
 
         $pendaftaran = Siswa::create($data);
+        if($pendaftaran->jenis_kelamin=='L'){
+            $du=Gelombang::find($data['gelombang_id'])->biaya;
+        } else {
+            $du=Gelombang::find($data['gelombang_id'])->biaya+100000;
+        }
         //input to tagihan
         Tagihan::create([
            'siswa_id' => $pendaftaran->id,
            'nama_tagihan' => 'PPDB',
-           'jumlah_tagihan' => Gelombang::find($data['gelombang_id'])->biaya,
+           'jumlah_tagihan' => $du,
         ]);
 
         Notification::make()
