@@ -6,6 +6,7 @@ use App\Models\Tahun;
 use App\Models\Pembayaran;
 use Illuminate\Http\Request;
 use App\Models\PengaturanWebsite;
+use Illuminate\Support\Facades\Auth;
 
 class KwitansiController extends Controller
 {
@@ -14,7 +15,8 @@ class KwitansiController extends Controller
         // Load relasi yang dibutuhkan
         $pembayaran=Pembayaran::find($pembayaran->id);
         $tahunaktif=Tahun::where('is_active',true)->first();
-        $bendahara = PengaturanWebsite::where('key', 'nama_bendahara')->first();
+        //$bendahara = PengaturanWebsite::where('key', 'nama_bendahara')->first();
+        $bendahara=Auth::user()->name;
         //dd($bendahara);
         //dd($pembayaran);
         

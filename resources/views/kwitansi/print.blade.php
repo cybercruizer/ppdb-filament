@@ -354,9 +354,9 @@
             </div>
             
             <div class="signature-box">
-                <div>Bendahara,</div><br><br><br>
+                <div>Teller,</div><br><br><br>
                 {{-- <div class="signature-line"></div> --}}
-                <div class="signature-label">( {{$bendahara->value }} )</div>
+                <div class="signature-label">( {{$bendahara }} )</div>
             </div>
         </div>
     </div>
