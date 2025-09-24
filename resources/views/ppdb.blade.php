@@ -4,8 +4,7 @@
     <section class="hero" id="home">
         <div class="hero-content">
             <h1>{{$title}}</h1>
-            <p class="hero-subtitle">SMK Muhammadiyah Mungkid - Membangun Generasi Unggul dengan Pendidikan Berkualitas
-                dan Berbasis Islami</p>
+            <p class="hero-subtitle">{{$pengaturan->where('key','nama_sekolah')->value('value')}} - {{$pengaturan->where('key','slogan_sekolah')->value('value')}}</p>
 
             <div class="cta-buttons">
                 <a href="/pendaftaran" class="btn btn-primary">

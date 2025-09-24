@@ -1,128 +1,111 @@
 @extends('components.layouts.page')
 
 @section('content')
-<section class="news" id="berita">
-<div class="container py-5">
-    <h2 class="text-center mb-4">Periksa Status Pendaftaran</h2>
+@extends('components.layouts.page')
 
-    <!-- Form -->
-    <div class="row justify-content-center mb-4">
-        <div class="col-md-6">
-            <form id="check-form" class="check-form d-flex">
-                <input type="text" id="nomor_pendaftaran" class="form-control me-2" placeholder="Masukkan Nomor Pendaftaran">
-                <button type="submit" class="btn btn-primary">Periksa</button>
-            </form>
-        </div>
-    </div>
+@section('content')
+    <style>
+        /* Bootstrap-like form-control */
+        .form-control {
+            display: block;
+            width: 100%;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: .50rem;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+        .form-control:focus {
+            color: #495057;
+            background-color: #fff;
+            border-color: #80bdff;
+            outline: 0;
+            box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+        }
+        /* Optional: form-group spacing */
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .invalid-feedback {
+            display: none;
+            width: 100%;
+            margin-top: .25rem;
+            font-size: .875em;
+            color: #dc3545;
+        }
+        .form-control.is-invalid + .invalid-feedback {
+            display: block;
+        }
+    </style>
+<div class="news container animate-on-scroll" style="max-width:600px; margin:5rem auto; padding:2rem;">
+    <h2 class="section-title">Cek Status Pendaftaran</h2>
 
-    <!-- Result -->
-    <div id="result" class="row justify-content-center" style="display:none;">
-        <div class="col-md-8">
-            <div class="card shadow-sm">
-                <div class="card-header bg-primary text-white">
-                    Detail Pendaftaran
-                </div>
-                <div class="card-body">
-                    <table class="table table-bordered mb-0">
-                        <tbody>
-                            <tr>
-                                <th>ID</th>
-                                <td id="student_id"></td>
-                            </tr>
-                            <tr>
-                                <th>Nama</th>
-                                <td id="student_nama"></td>
-                            </tr>
-                            <tr>
-                                <th>Nomor Pendaftaran</th>
-                                <td id="student_nomor"></td>
-                            </tr>
-                            <tr>
-                                <th>Status</th>
-                                <td id="student_status"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Error message -->
-    <div id="error" class="alert alert-danger text-center mt-4" style="display:none;">
-        Nomor pendaftaran tidak ditemukan.
-    </div>
+    <form id="statusForm" class="flex flex-col gap-4" style="align-content: center; text-align: center; margin-top:2rem;">
+        <input
+            id="nomorInput"
+            name="nomor_pendaftaran"
+            type="text"
+            placeholder="Masukkan Nomor Pendaftaran (contoh: TSM-015)"
+            class="form-control"
+            required
+        >
+        <br>
+        <button
+            type="submit"
+            class="btn btn-primary"
+        >
+            Cek Status
+        </button>
+    </form>
+    
+    <div id="result" class="mt-6 text-center text-lg" style="margin-top: 8px"></div>
 </div>
-</section>
-@endsection
 
-@push('styles')
-<style>
-    .check-form {
-        background: #ffffff;
-        border: 1px solid #ddd;
-        border-radius: 12px;
-        padding: 12px 16px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        transition: all 0.3s ease-in-out;
-    }
-
-    .check-form:focus-within {
-        border-color: #0d6efd;
-        box-shadow: 0 0 0 4px rgba(13,110,253,0.15);
-    }
-
-    .check-form input {
-        border-radius: 8px;
-        font-size: 1rem;
-        padding: 10px 14px;
-    }
-
-    .check-form button {
-        border-radius: 8px;
-        padding: 10px 20px;
-        font-weight: 600;
-        transition: background 0.3s ease-in-out;
-    }
-
-    .check-form button:hover {
-        background: #0b5ed7;
-    }
-</style>
-@endpush
-
-@push('scripts')
 <script>
-document.getElementById('check-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    let nomor = document.getElementById('nomor_pendaftaran').value.trim();
+    document.getElementById('statusForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const resultEl = document.getElementById('result');
+        const nomor = document.getElementById('nomorInput').value.trim();
 
-    if (!nomor) {
-        alert("Masukkan nomor pendaftaran terlebih dahulu.");
-        return;
-    }
+        if (!nomor) {
+            resultEl.textContent = 'Silakan masukkan nomor pendaftaran.';
+            resultEl.className = 'text-red-600';
+            return;
+        }
 
-    // Ajax call to check student
-    fetch(`/api/cekstatus/${nomor}`)
-        .then(res => res.json())
-        .then(data => {
-            if (data && data.id) {
-                document.getElementById('student_id').innerText = data.id;
-                document.getElementById('student_nama').innerText = data.nama;
-                document.getElementById('student_nomor').innerText = data.nomor_pendaftaran;
-                document.getElementById('student_status').innerText = data.is_accepted ? 'DITERIMA' : 'BELUM DITERIMA';
+        resultEl.textContent = 'Memeriksa status...';
+        resultEl.className = 'text-gray-600';
 
-                document.getElementById('result').style.display = 'block';
-                document.getElementById('error').style.display = 'none';
-            } else {
-                document.getElementById('result').style.display = 'none';
-                document.getElementById('error').style.display = 'block';
+        try {
+            const response = await fetch(`/api/cekstatus/${encodeURIComponent(nomor)}`);
+            if (!response.ok) {
+                throw new Error('Nomor pendaftaran tidak ditemukan');
             }
-        })
-        .catch(() => {
-            document.getElementById('result').style.display = 'none';
-            document.getElementById('error').style.display = 'block';
-        });
-});
+
+            const data = await response.json();
+            // data = { id, nama, nomor_pendaftaran, is_accepted }
+
+            if (data.is_accepted) {
+                resultEl.innerHTML = `
+                    <p>Halo <strong>${data.nama}</strong>,</p>
+                    <p>Nomor Pendaftaran <strong>${data.nomor_pendaftaran}</strong></p>
+                    <p class="text-green-600 font-semibold">Selamat! Anda diterima.</p>
+                `;
+            } else {
+                resultEl.innerHTML = `
+                    <p>Halo <strong>${data.nama}</strong>,</p>
+                    <p>Nomor Pendaftaran <strong>${data.nomor_pendaftaran}</strong></p>
+                    <p class="text-yellow-600 font-semibold">Maaf, Anda belum diterima.</p>
+                `;
+            }
+        } catch (err) {
+            resultEl.textContent = err.message;
+            resultEl.className = 'text-red-600';
+        }
+    });
 </script>
-@endpush
+@endsection

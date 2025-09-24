@@ -11,9 +11,13 @@ class HomeController extends Controller
     {
         $posts = \App\Models\Post::latest()->take(3)->get();
         $ta= Tahun::where('is_active',true)->first();
+        $pengaturan = \App\Models\PengaturanWebsite::all();
+        //dd($pengaturan);
+        
         return view('ppdb', [
             'title' => 'SPMB '.$ta->nama_tahun,
             'posts' => $posts,
+            'pengaturan' => $pengaturan,
         ]);
     }
     public function form()

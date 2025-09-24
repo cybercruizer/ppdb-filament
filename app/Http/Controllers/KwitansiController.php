@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Pembayaran;
 use App\Models\Tahun;
+use App\Models\Pembayaran;
 use Illuminate\Http\Request;
+use App\Models\PengaturanWebsite;
 
 class KwitansiController extends Controller
 {
@@ -13,6 +14,8 @@ class KwitansiController extends Controller
         // Load relasi yang dibutuhkan
         $pembayaran=Pembayaran::find($pembayaran->id);
         $tahunaktif=Tahun::where('is_active',true)->first();
+        $bendahara = PengaturanWebsite::where('key', 'nama_bendahara')->first();
+        //dd($bendahara);
         //dd($pembayaran);
         
         // Hitung total tagihan dan sisa
@@ -23,6 +26,6 @@ class KwitansiController extends Controller
         // Tentukan status pembayaran
         $status = $sisaTagihan <= 0 ? 'LUNAS' : 'KURANG Rp ' . number_format($sisaTagihan, 0, ',', '.');
         
-        return view('kwitansi.print', compact('pembayaran', 'status', 'sisaTagihan', 'totalTagihan', 'totalPembayaran','tahunaktif'));
+        return view('kwitansi.print', compact('pembayaran', 'status', 'sisaTagihan', 'totalTagihan', 'totalPembayaran','tahunaktif','bendahara'));
     }
 }

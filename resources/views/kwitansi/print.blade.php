@@ -232,9 +232,12 @@
             }
             
             .kwitansi-container {
-                border: 2px solid #000;
+                border: 1px solid #000;
                 margin: 0;
-                padding: 15px;
+                padding-top: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                break-after: page;
             }
             
             body {
@@ -281,7 +284,7 @@
         
         <!-- Nomor Kwitansi -->
         <div class="kwitansi-no">
-            No. Kwitansi: PPDB/{{ substr($pembayaran->siswa->tahun->nama_tahun, 0, 4) }}/{{ str_pad($pembayaran->id, 4, '0', STR_PAD_LEFT) }}
+            No. Kuitansi: SPMB/{{ substr($pembayaran->siswa->tahun->nama_tahun, 0, 4) }}/{{ str_pad($pembayaran->id, 4, '0', STR_PAD_LEFT) }}
         </div>
         
         <!-- Tanggal dan Tempat -->
@@ -353,7 +356,7 @@
             <div class="signature-box">
                 <div>Bendahara,</div><br><br><br>
                 {{-- <div class="signature-line"></div> --}}
-                <div class="signature-label">( ...................... )</div>
+                <div class="signature-label">( {{$bendahara->value }} )</div>
             </div>
         </div>
     </div>

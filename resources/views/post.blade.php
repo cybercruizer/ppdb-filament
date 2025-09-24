@@ -1,7 +1,7 @@
 @extends('components.layouts.page')
 @section('content')
     <!-- News Section -->
-    <section class="news" id="berita">
+    <section class="news" id="berita" style="margin-top: 80px;">
         <div class="container">
             <h2 class="section-title animate-on-scroll">{{$post->title}}</h2>
             <div class="subtitle">
