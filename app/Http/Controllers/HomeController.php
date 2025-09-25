@@ -12,12 +12,14 @@ class HomeController extends Controller
         $posts = \App\Models\Post::take(3)->get();
         $ta= Tahun::where('is_active',true)->first();
         $pengaturan = \App\Models\PengaturanWebsite::all();
+        $gelombangs = \App\Models\Gelombang::where('tahun_id', $ta->id)->latest()->get();
         //dd($pengaturan);
         
         return view('index_ppdb', [
             'title' => 'SPMB '.$ta->nama_tahun,
             'posts' => $posts,
             'pengaturan' => $pengaturan,
+            'gelombangs' => $gelombangs,
         ]);
     }
     public function informasi()

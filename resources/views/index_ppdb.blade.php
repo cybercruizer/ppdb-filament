@@ -164,95 +164,31 @@
                 <div class="timeline-line"></div>
 
                 <!-- Gelombang Inden -->
-                <div class="timeline-item animate-on-scroll">
-                    <div class="timeline-marker">
-                        <div class="marker-circle"></div>
-                        <div class="marker-pulse"></div>
+                @forelse ($gelombangs as $gelombang)
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-marker">
+                            <div class="marker-circle"></div>
+                            <div class="marker-pulse"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">{{$gelombang->tanggal_mulai}} s/d {{$gelombang->tanggal_selesai}}</div>
+                            <h3 class="timeline-title">{{$gelombang->nama_gelombang}}</h3>
+                            
+                            <p class="timeline-description">
+                                {!!$gelombang->keterangan!!}
+                            </p>
+                            <div class="timeline-status {{\Carbon\Carbon::now() > $gelombang->tanggal_mulai && \Carbon\Carbon::now() < $gelombang->tanggal_selesai ? 'active' : 'upcoming'}}">
+                                {{\Carbon\Carbon::now() > $gelombang->tanggal_mulai && \Carbon\Carbon::now() < $gelombang->tanggal_selesai ? 'Sedang Berlangsung' : 'Akan Datang'}}
+                            </div>
+                        </div>
                     </div>
+                @empty
                     <div class="timeline-content">
-                        <div class="timeline-date">September - 30 November 2025</div>
-                        <h3 class="timeline-title">Gelombang Inden</h3>
-                        <div class="timeline-badge early">Early Bird</div>
-                        <p class="timeline-description">
-                            Dapatkan keuntungan khusus dengan mendaftar lebih awal.
-                            Kuota terbatas untuk gelombang ini.
-                        </p>
-                        <div class="timeline-status active">Sedang Berlangsung</div>
+                            <p class="timeline-description">
+                                Tidak ada jadwal pendaftaran saat ini.
+                            </p>
                     </div>
-                </div>
-
-                <!-- Gelombang 1 -->
-                <div class="timeline-item animate-on-scroll">
-                    <div class="timeline-marker">
-                        <div class="marker-circle"></div>
-                        <div class="marker-pulse"></div>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">1 Desember 2025 - 31 Januari 2026</div>
-                        <h3 class="timeline-title">Gelombang 1</h3>
-                        <div class="timeline-badge regular">Regular</div>
-                        <p class="timeline-description">
-                            Pendaftaran gelombang pertama dengan kuota lebih banyak
-                            dan fasilitas lengkap.
-                        </p>
-                        <div class="timeline-status upcoming">Akan Datang</div>
-                    </div>
-                </div>
-
-                <!-- Gelombang 2 -->
-                <div class="timeline-item animate-on-scroll">
-                    <div class="timeline-marker">
-                        <div class="marker-circle"></div>
-                        <div class="marker-pulse"></div>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">1 Februari - 31 Maret 2026</div>
-                        <h3 class="timeline-title">Gelombang 2</h3>
-                        <div class="timeline-badge regular">Regular</div>
-                        <p class="timeline-description">
-                            Kesempatan kedua untuk mendaftar dengan pilihan jurusan
-                            yang masih tersedia.
-                        </p>
-                        <div class="timeline-status upcoming">Akan Datang</div>
-                    </div>
-                </div>
-
-                <!-- Gelombang 3 -->
-                <div class="timeline-item animate-on-scroll">
-                    <div class="timeline-marker">
-                        <div class="marker-circle"></div>
-                        <div class="marker-pulse"></div>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">1 April - 31 Mei 2026</div>
-                        <h3 class="timeline-title">Gelombang 3</h3>
-                        <div class="timeline-badge regular">Regular</div>
-                        <p class="timeline-description">
-                            Gelombang terakhir reguler dengan kuota terbatas.
-                            Segera daftar sebelum penutupan.
-                        </p>
-                        <div class="timeline-status upcoming">Akan Datang</div>
-                    </div>
-                </div>
-
-                <!-- Gelombang Khusus -->
-                <div class="timeline-item animate-on-scroll">
-                    <div class="timeline-marker">
-                        <div class="marker-circle"></div>
-                        <div class="marker-pulse"></div>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">1 Juni - 31 Juli 2026</div>
-                        <h3 class="timeline-title">Gelombang Khusus</h3>
-                        <div class="timeline-badge special">Khusus</div>
-                        <p class="timeline-description">
-                            Pendaftaran khusus untuk kondisi tertentu dengan persyaratan
-                            tambahan. Kuota sangat terbatas.
-                        </p>
-                        <div class="timeline-status upcoming">Akan Datang</div>
-                    </div>
-                </div>
-            </div>
+                @endforelse     
 
             <div class="timeline-cta animate-on-scroll">
                 <p>Jangan lewatkan kesempatan emas untuk bergabung bersama kami!</p>
@@ -262,69 +198,4 @@
             </div>
         </div>
     </section>
-    <script type="text/javascript">
-        // Timeline animation
-        const timelineItems = document.querySelectorAll('.timeline-item');
-
-        const timelineObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    // Stagger animation
-                    const index = Array.from(timelineItems).indexOf(entry.target);
-                    entry.target.style.transitionDelay = `${index * 0.2}s`;
-                }
-            });
-        }, {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        });
-
-        timelineItems.forEach(item => {
-            timelineObserver.observe(item);
-        });
-
-        // Update status based on current date (optional functionality)
-        function updateTimelineStatus() {
-            const currentDate = new Date();
-            const timelineDates = [{
-                    start: new Date('2025-09-01'),
-                    end: new Date('2025-11-30')
-                },
-                {
-                    start: new Date('2025-12-01'),
-                    end: new Date('2026-01-31')
-                },
-                {
-                    start: new Date('2026-02-01'),
-                    end: new Date('2026-03-31')
-                },
-                {
-                    start: new Date('2026-04-01'),
-                    end: new Date('2026-05-31')
-                },
-                {
-                    start: new Date('2026-06-01'),
-                    end: new Date('2026-07-31')
-                }
-            ];
-
-            timelineItems.forEach((item, index) => {
-                const statusElement = item.querySelector('.timeline-status');
-                if (currentDate >= timelineDates[index].start && currentDate <= timelineDates[index].end) {
-                    statusElement.textContent = 'Sedang Berlangsung';
-                    statusElement.className = 'timeline-status active';
-                } else if (currentDate < timelineDates[index].start) {
-                    statusElement.textContent = 'Akan Datang';
-                    statusElement.className = 'timeline-status upcoming';
-                } else {
-                    statusElement.textContent = 'Telah Berakhir';
-                    statusElement.className = 'timeline-status completed';
-                }
-            });
-        }
-
-        // Call the function to update status
-        updateTimelineStatus();
-    </script>
 @endsection
