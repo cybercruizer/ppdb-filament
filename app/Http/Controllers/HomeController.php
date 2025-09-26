@@ -24,7 +24,7 @@ class HomeController extends Controller
     }
     public function informasi()
     {
-        $posts = \App\Models\Post::latest()->get();
+        $posts = \App\Models\Post::orderBy('urutan','asc')->get();
         //dd($pengaturan);
         
         return view('informasi', [

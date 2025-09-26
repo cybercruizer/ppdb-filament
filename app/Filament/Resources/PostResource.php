@@ -28,8 +28,13 @@ class PostResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('title')
+                    ->label('Judul')
                     ->required()
                     ->maxLength(255),
+                Forms\Components\TextInput::make('urutan')
+                    ->numeric()
+                    ->default(0)
+                    ->required(),
                 Forms\Components\Select::make('category')
                     ->options([
                         'info' => 'Informasi',
@@ -47,7 +52,7 @@ class PostResource extends Resource
             ->schema([
                 Textentry::make('title')->label('Judul'),
                 Textentry::make('category')->label('Kategori'),
-                Textentry::make('content')->label('Konten'),
+                Textentry::make('content')->label('Konten')->html(),
                 Textentry::make('created_at')->label('Dibuat pada')->dateTime(),
                 Textentry::make('updated_at')->label('Diperbarui pada')->dateTime(),
             ]);
@@ -58,6 +63,7 @@ class PostResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('title')->label('Judul')->sortable()->searchable(),
+                Tables\Columns\TextColumn::make('urutan')->label('Urutan')->sortable(),
                 Tables\Columns\TextColumn::make('category')->label('Kategori')->sortable(),
                 Tables\Columns\TextColumn::make('created_at')->dateTime()->label('Dibuat pada')->sortable(),
             ])

@@ -6,12 +6,14 @@ use App\Livewire\CreateTesfisik;
 use App\Livewire\CreatePendaftar;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\JurusanController;
 use App\Http\Controllers\KwitansiController;
 use App\Filament\Resources\PendaftaranResource\Pages\CreatePendaftaran;
-use App\Http\Controllers\PostController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/informasi',[HomeController::class, 'informasi'])->name('berita');
+Route::get('/jurusan/{kode_jurusan?}',[JurusanController::class,'deskripsi'])->name('jurusan');
 Route::get('form-pendaftaran', [HomeController::class, 'form'])->name('form.pendaftaran');
 Route::post('form-pendaftaran', [HomeController::class, 'formStore'])->name('form.pendaftaran.store');
 

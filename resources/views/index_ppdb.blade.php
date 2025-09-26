@@ -265,7 +265,7 @@
                 <div class="timeline-cta animate-on-scroll">
                     <p>Jangan lewatkan kesempatan emas untuk bergabung bersama kami!</p>
                     <a href="/pendaftaran" class="btn btn-primary">
-                        <i class="fas fa-calendar-check"></i> Daftar Sekarang
+                         Daftar Sekarang
                     </a>
                 </div>
             </div>
