@@ -18,7 +18,7 @@
                             <i class="fas fa-calendar"></i> {{ $post->created_at->format('d M Y') }}
                         </div>
                         <h3>{{$post->title}}</h3>
-                        <p>{!!Str::limit($post->content,100)!!}</p>
+                        <div>{{ strip_tags(Str::limit($post->content,100)) }}</div>
                         <a href="post/{{$post->id}}" class="read-more">
                             Baca Selengkapnya <i class="fas fa-arrow-right"></i>
                         </a>
