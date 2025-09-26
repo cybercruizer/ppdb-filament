@@ -111,11 +111,12 @@
             gap: 2rem;
             margin: 0;
         }
+
         .nav-menu .btn-primary:hover {
             color: rgb(15, 63, 0) !important;
-            border: #2e7d32!important;
+            border: #2e7d32 !important;
             box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
-            
+
         }
 
         .nav-menu a {
@@ -287,7 +288,7 @@
             color: white !important;
             box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
         }
-        
+
 
         .btn-secondary {
             background: rgba(255, 255, 255, 0.8);
@@ -408,6 +409,24 @@
             margin-bottom: 1.5rem;
         }
 
+        .news-date i {
+            margin-right: 0.5rem;
+        }
+
+        .news-card h3 {
+            color: #2E7D32;
+            margin-bottom: 1rem;
+        }
+
+        .news-card p {
+            line-height: 1.8;
+        }
+
+        .news-card strong {
+            color: #1e293b;
+            font-weight: 600;
+        }
+
         .read-more {
             color: #4CAF50;
             text-decoration: none;
@@ -419,6 +438,38 @@
         }
 
         .read-more:hover {
+            color: #2E7D32;
+        }
+
+        #mengapa-kami .news-card {
+            text-align: center;
+        }
+
+        #mengapa-kami .news-card h3 {
+            color: #2E7D32;
+            margin-bottom: 1rem;
+            min-height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #mengapa-kami .news-card p {
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        /* Highlight quote khusus */
+        #mengapa-kami .news-card:first-child {
+            grid-column: 1 / -1;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        #mengapa-kami .news-card:first-child h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin: 1rem 0;
             color: #2E7D32;
         }
 
@@ -971,7 +1022,7 @@
             </a>
 
             <ul class="nav-menu">
-                <li><a href="/#tentang">Tentang</a></li>
+                <li><a href="/#mengapa-kami">Tentang</a></li>
                 <li><a href="/#jurusan">Jurusan</a></li>
                 <li><a href="/informasi">Informasi</a></li>
                 <li><a href="/#kontak">Kontak</a></li>
@@ -989,12 +1040,12 @@
 
     <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
-        <ul class="sidebar-menu">
-            <li><a href="#tentang">Tentang</a></li>
-            <li><a href="#jurusan">Jurusan</a></li>
-            <li><a href="#berita">Berita</a></li>
+        <ul class="sidebar-menu" style="margin-top: 4rem;">
+            <li><a href="/#mengapa-kami">Tentang</a></li>
+            <li><a href="/#jurusan">Jurusan</a></li>
+            <li><a href="/informasi">Informasi</a></li>
             <li><a href="#kontak">Kontak</a></li>
-            <li><a href="#ppdb">Daftar Sekarang</a></li>
+            <li><a href="/pendaftaran">Daftar Sekarang</a></li>
         </ul>
     </div>
 
