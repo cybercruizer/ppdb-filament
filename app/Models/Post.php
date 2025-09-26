@@ -13,6 +13,7 @@ class Post extends Model
     // add fillable
     protected $fillable = [
         'title',
+        'urutan',
         'content',
         'category'
     ];
