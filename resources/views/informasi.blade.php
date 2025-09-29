@@ -19,7 +19,7 @@
                         </div>
                         <h3>{{$post->title}}</h3>
                         <div>{{ strip_tags(Str::limit($post->content,100)) }}</div>
-                        <a href="post/{{$post->id}}" class="read-more">
+                        <a href="post/{{$post->slug}}" class="read-more">
                             Baca Selengkapnya <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>

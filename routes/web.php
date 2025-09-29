@@ -13,7 +13,7 @@ use App\Filament\Resources\PendaftaranResource\Pages\CreatePendaftaran;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/informasi',[HomeController::class, 'informasi'])->name('berita');
-Route::get('/jurusan/{kode_jurusan?}',[JurusanController::class,'deskripsi'])->name('jurusan');
+Route::get('/jurusan/{kode_jurusan}',[JurusanController::class,'deskripsi'])->name('jurusan');
 Route::get('form-pendaftaran', [HomeController::class, 'form'])->name('form.pendaftaran');
 Route::post('form-pendaftaran', [HomeController::class, 'formStore'])->name('form.pendaftaran.store');
 
@@ -36,7 +36,7 @@ Route::get('/kwitansi/{pembayaran}/print', [KwitansiController::class, 'print'])
     
 Route::get('pendaftaran', CreatePendaftar::class);
 Route::get('tesfisik', CreateTesfisik::class);
-Route::get('/post/{id}',[PostController::class,'show'])->name('post.view');
+Route::get('/post/{slug}',[PostController::class,'show'])->name('post.view');
 Route::get('/tespengumuman/{id}', function () {
     $siswa=Siswa::find(request('id'));
     return view('pengumuman', ['siswa'=>$siswa]);

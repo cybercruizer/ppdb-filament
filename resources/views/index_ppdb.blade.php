@@ -42,7 +42,8 @@
                     <h3>Ditunjuk Sebagai Sekolah Unggul</h3>
                     <p>
                         Merupakan sekolah unggulan yang ditetapkan oleh Pimpinan Pusat Muhammadiyah,
-                        menjamin kualitas pendidikan yang terstandar dan terpercaya. Di samping itu SMK Muhammadiyah Mungkid Sejak tahun 2021 telah ditunjuk sebagai Sekolah Pusat Keunggulan oleh Kemdikbud
+                        menjamin kualitas pendidikan yang terstandar dan terpercaya. Di samping itu SMK Muhammadiyah Mungkid
+                        Sejak tahun 2021 telah ditunjuk sebagai Sekolah Pusat Keunggulan oleh Kemdikbud
                     </p>
                 </div>
 
@@ -124,99 +125,22 @@
             </p>
 
             <div class="jurusan-grid">
-                <!-- Teknik Instalasi Tenaga Listrik -->
-                <div class="jurusan-card animate-on-scroll">
-                    <div class="jurusan-icon">
-                        <i class="fas fa-bolt"></i>
+                @forelse ($jurusans as $jurusan)
+                    <div class="jurusan-card animate-on-scroll">
+                        <div class="jurusan-icon">
+                            <i class="{{$jurusan->icon}}"></i>
+                        </div>
+                        <h3>{{$jurusan->nama_jurusan}}</h3>
+                        <p>{{$jurusan->deskripsi_singkat}}</p>
+                        <a href="/jurusan/{{$jurusan->kode_jurusan}}" class="btn-jurusan">
+                            <span>Detail Jurusan</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
-                    <h3>Teknik Instalasi Tenaga Listrik</h3>
-                    <p>Mempelajari teknik instalasi, perawatan, dan perbaikan sistem tenaga listrik untuk berbagai
-                        kebutuhan.</p>
-                    <a href="/jurusan/teknik-instalasi-tenaga-listrik" class="btn-jurusan">
-                        <span>Detail Jurusan</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- Teknik Pemesinan -->
-                <div class="jurusan-card animate-on-scroll">
-                    <div class="jurusan-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>Teknik Pemesinan</h3>
-                    <p>Menguasai teknik pembuatan komponen mesin dengan menggunakan mesin bubut, frais, dan peralatan
-                        lainnya.</p>
-                    <a href="/jurusan/teknik-pemesinan" class="btn-jurusan">
-                        <span>Detail Jurusan</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- Teknik Kendaraan Ringan -->
-                <div class="jurusan-card animate-on-scroll">
-                    <div class="jurusan-icon">
-                        <i class="fas fa-car"></i>
-                    </div>
-                    <h3>Teknik Kendaraan Ringan</h3>
-                    <p>Memahami sistem kerja, perawatan, dan perbaikan kendaraan ringan seperti mobil dan kendaraan
-                        komersial.</p>
-                    <a href="/jurusan/teknik-kendaraan-ringan" class="btn-jurusan">
-                        <span>Detail Jurusan</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- Teknik Sepeda Motor -->
-                <div class="jurusan-card animate-on-scroll">
-                    <div class="jurusan-icon">
-                        <i class="fas fa-motorcycle"></i>
-                    </div>
-                    <h3>Teknik Sepeda Motor</h3>
-                    <p>Mempelajari teknik perawatan, perbaikan, dan modifikasi sepeda motor dengan teknologi terkini.</p>
-                    <a href="/jurusan/teknik-sepeda-motor" class="btn-jurusan">
-                        <span>Detail Jurusan</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- Teknik Komputer dan Jaringan -->
-                <div class="jurusan-card animate-on-scroll">
-                    <div class="jurusan-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h3>Teknik Komputer dan Jaringan</h3>
-                    <p>Menguasai instalasi, konfigurasi, dan pemeliharaan jaringan komputer serta perangkat keras.</p>
-                    <a href="/jurusan/teknik-komputer-dan-jaringan" class="btn-jurusan">
-                        <span>Detail Jurusan</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- Kuliner -->
-                <div class="jurusan-card animate-on-scroll">
-                    <div class="jurusan-icon">
-                        <i class="fas fa-utensils"></i>
-                    </div>
-                    <h3>Kuliner</h3>
-                    <p>Mengembangkan keterampilan dalam bidang tata boga, pengolahan makanan, dan manajemen dapur.</p>
-                    <a href="/jurusan/kuliner" class="btn-jurusan">
-                        <span>Detail Jurusan</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- Perhotelan -->
-                <div class="jurusan-card animate-on-scroll">
-                    <div class="jurusan-icon">
-                        <i class="fas fa-hotel"></i>
-                    </div>
-                    <h3>Perhotelan</h3>
-                    <p>Mempelajari manajemen operasional hotel, pelayanan tamu, dan industri pariwisata.</p>
-                    <a href="/jurusan/perhotelan" class="btn-jurusan">
-                        <span>Detail Jurusan</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+                @empty
+                    <p class="animate-on-scroll">Belum ada jurusan tersedia.</p>
+                @endforelse
+                
             </div>
         </div>
     </section>
@@ -265,7 +189,7 @@
                 <div class="timeline-cta animate-on-scroll">
                     <p>Jangan lewatkan kesempatan emas untuk bergabung bersama kami!</p>
                     <a href="/pendaftaran" class="btn btn-primary">
-                         Daftar Sekarang
+                        Daftar Sekarang
                     </a>
                 </div>
             </div>
@@ -366,8 +290,8 @@
                             <i class="fas fa-calendar"></i> {{ $post->created_at->format('d M Y') }}
                         </div>
                         <h3>{{ $post->title }}</h3>
-                        <p>{!! Str::limit($post->content, 100) !!}</p>
-                        <a href="post/{{ $post->id }}" class="read-more">
+                        <p>{!! strip_tags(Str::limit($post->content, 100)) !!}</p>
+                        <a href="post/{{ $post->slug }}" class="read-more">
                             Baca Selengkapnya <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>

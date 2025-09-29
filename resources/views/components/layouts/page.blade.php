@@ -7,8 +7,9 @@
 
 <head>
     <meta charset="UTF-8">
+    {!! seo()->for($post ?? $jurusan) !!}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPMB {{ $pengaturan->where('key', 'nama_sekolah')->value('value') }}</title>
+    {{-- <title>SPMB {{ $pengaturan->where('key', 'nama_sekolah')->value('value') }}</title> --}}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
         * {

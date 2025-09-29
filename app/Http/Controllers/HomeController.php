@@ -13,6 +13,7 @@ class HomeController extends Controller
         $ta= Tahun::where('is_active',true)->first();
         $pengaturan = \App\Models\PengaturanWebsite::all();
         $gelombangs = \App\Models\Gelombang::where('tahun_id', $ta->id)->latest()->get();
+        $jurusans = \App\Models\Jurusan::all();
         //dd($pengaturan);
         
         return view('index_ppdb', [
@@ -20,6 +21,7 @@ class HomeController extends Controller
             'posts' => $posts,
             'pengaturan' => $pengaturan,
             'gelombangs' => $gelombangs,
+            'jurusans' => $jurusans,
         ]);
     }
     public function informasi()

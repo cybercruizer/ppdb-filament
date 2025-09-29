@@ -6,12 +6,16 @@ use App\Filament\Resources\JurusanResource\Pages;
 use App\Filament\Resources\JurusanResource\RelationManagers;
 use App\Models\Jurusan;
 use Filament\Forms;
+use Filament\Forms\Components\Group;
+use Filament\Forms\Components\Section;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
+use FilamentTiptapEditor\TiptapEditor;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use RalphJSmit\Filament\SEO\SEO;
 
 class JurusanResource extends Resource
 {
@@ -31,6 +35,26 @@ class JurusanResource extends Resource
                 Forms\Components\TextInput::make('nama_jurusan')
                     ->required()
                     ->maxLength(255),
+                Forms\Components\TextInput::make('deskripsi_singkat')
+                    ->label('Deskripsi Singkat')
+                    ->maxLength(255)
+                    ->afterStateUpdated(function ($state, callable $set) {
+                        if (!empty($state)) {
+                            $set('seo.description', $state);
+                        }
+                    }),
+                Forms\Components\TextInput::make('icon')
+                    ->maxLength(100)
+                    ->helperText('Masukkan nama kelas ikon dari Heroicons, misal: academic-cap'),
+                TiptapEditor::make('deskripsi')
+                    ->label('Deskripsi Lengkap')
+                    ->required()
+                    ->columnSpanFull(),
+                Section::make('SEO (Search Engine Optimization)')
+                    ->description('Pengaturan SEO untuk halaman ini.')
+                    ->schema([
+                        SEO::make(),
+                    ]),
             ]);
     }
 

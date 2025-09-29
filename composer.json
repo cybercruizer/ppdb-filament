@@ -13,6 +13,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "awcodes/filament-tiptap-editor": "^3.5",
         "bezhansalleh/filament-shield": "^3.3",
         "dedoc/scramble": "^0.11.33",
         "dutchcodingcompany/filament-socialite": "^2.3",
@@ -28,6 +29,8 @@
         "marcogermani87/filament-captcha": "^1.7",
         "owenvoke/blade-fontawesome": "^2.8",
         "pxlrbt/filament-excel": "^2.3",
+        "ralphjsmit/laravel-filament-seo": "^1.5",
+        "ralphjsmit/laravel-seo": "^1.7",
         "realrashid/sweet-alert": "^7.3",
         "resend/resend-laravel": "^0.15.0",
         "rupadana/filament-api-service": "^3.3",

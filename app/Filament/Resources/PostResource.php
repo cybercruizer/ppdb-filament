@@ -5,11 +5,16 @@ namespace App\Filament\Resources;
 use Filament\Forms;
 use App\Models\Post;
 use Filament\Tables;
+use Filament\Forms\Set;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
+use Illuminate\Support\Str;
 use Filament\Infolists\Infolist;
 use Filament\Resources\Resource;
+use RalphJSmit\Filament\SEO\SEO;
 use Filament\Tables\Actions\Action;
+use Filament\Forms\Components\Section;
+use FilamentTiptapEditor\TiptapEditor;
 use Illuminate\Database\Eloquent\Builder;
 use Filament\Infolists\Components\TextEntry;
 use App\Filament\Resources\PostResource\Pages;
@@ -30,7 +35,13 @@ class PostResource extends Resource
                 Forms\Components\TextInput::make('title')
                     ->label('Judul')
                     ->required()
-                    ->maxLength(255),
+                    ->maxLength(160)
+                    ->live(onBlur: true) ->afterStateUpdated(function (Set $set, $state) {
+                        $set('slug', Str::slug($state));
+                        $set('seo.title',$state);
+                        }),
+                Forms\Components\TextInput::make('slug')
+                    ->label('Link Slug'),
                 Forms\Components\TextInput::make('urutan')
                     ->numeric()
                     ->default(0)
@@ -42,8 +53,16 @@ class PostResource extends Resource
                         'pengumuman' => 'Pengumuman',
                     ])
                     ->required(),
-                Forms\Components\RichEditor::make('content')
-                    ->required(),
+                TiptapEditor::make('content')
+                    ->required()
+                    ->columnSpanFull()
+                    ->extraInputAttributes(['style' => 'min-height: 12rem;']),
+                Section::make('SEO (Search Engine Optimization)')
+                    ->description('Pengaturan SEO untuk halaman ini.')
+                    ->schema([
+                        SEO::make(),
+                    ]),
+                
             ]);
     }
     public static function infolist(Infolist $infolist): Infolist

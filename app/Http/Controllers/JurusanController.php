@@ -2,26 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Jurusan;
 use Illuminate\Http\Request;
 
 class JurusanController extends Controller
 {
-    public function deskripsi($kode_jurusan = null)
+    public function deskripsi($kode_jurusan)
     {
-        $jurusans = \App\Models\Jurusan::all();
-        if ($kode_jurusan) {
-            $jurusan = \App\Models\Jurusan::where('kode_jurusan', $kode_jurusan)->first();
-            if (!$jurusan) {
-                return redirect()->route('jurusan');
-            }
-        } else {
-            $jurusan = null;
-        }
+        $jurusan = Jurusan::where('kode_jurusan',$kode_jurusan)->firstOrFail();
 
         return view('jurusan', [
-            'title' => 'Jurusan',
-            'jurusans' => $jurusans,
-            'selected_jurusan' => $jurusan,
+            'jurusan' => $jurusan,
         ]);
     }
 }
