@@ -1076,9 +1076,9 @@
                     {{ $pengaturan->where('key', 'alamat_sekolah')->value('value') }}</p>
                 <p><i class="fas fa-phone"></i> {{ $pengaturan->where('key', 'no_telp_sekolah')->value('value') }}</p>
                 <p><i class="fas fa-envelope"></i> {{ $pengaturan->where('key', 'email_sekolah')->value('value') }}</p>
-                <p><i class="fab fa-whatsapp"></i> Admin1: <a href="https://wa.me/{{ $pengaturan->where('key', 'admin_1')->value('value') }}">{{ $pengaturan->where('key', 'admin_1')->value('value') }}</p>
-                <p><i class="fab fa-whatsapp"></i> Admin2: <a href="https://wa.me/{{ $pengaturan->where('key', 'admin_2')->value('value') }}">{{ $pengaturan->where('key', 'admin_2')->value('value') }}</p>
-                <p><i class="fab fa-whatsapp"></i> Admin3: <a href="https://wa.me/{{ $pengaturan->where('key', 'admin_3')->value('value') }}">{{ $pengaturan->where('key', 'admin_3')->value('value') }}</p>
+                <p><i class="fab fa-whatsapp"></i> Admin1: <a href="https://wa.me/{{ $pengaturan->where('key', 'admin_1')->value('value') }}">+{{ $pengaturan->where('key', 'admin_1')->value('value') }}</a></p>
+                <p><i class="fab fa-whatsapp"></i> Admin2: <a href="https://wa.me/{{ $pengaturan->where('key', 'admin_2')->value('value') }}">+{{ $pengaturan->where('key', 'admin_2')->value('value') }}</a></p>
+                <p><i class="fab fa-whatsapp"></i> Admin3: <a href="https://wa.me/{{ $pengaturan->where('key', 'admin_3')->value('value') }}">+{{ $pengaturan->where('key', 'admin_3')->value('value') }}</a></p>
             </div>
 
             <div class="footer-section">

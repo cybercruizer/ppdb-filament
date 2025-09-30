@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('siswas', function (Blueprint $table) {
-            $table->enum('kategori', ['REG', 'AP50', 'AP100','KB','KM','AUM', 'PDK'])
+            $table->enum('kategori', ['R', 'AP50', 'AP100','KB','KM','AUM', 'PD','AP'])
             ->after('jenis_kelamin')
             ->default('REG')
             ->comment('Kategori Siswa: Reguler, AP50, AP100, kakak beradik, kembar, aum,pondok');

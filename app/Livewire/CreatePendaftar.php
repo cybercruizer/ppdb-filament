@@ -54,31 +54,31 @@ class CreatePendaftar extends Component implements HasForms
                             ->label('Jurusan')
                             ->options(Jurusan::select('id', 'nama_jurusan', 'kode_jurusan')->pluck('nama_jurusan', 'id'))
                             ->required()
-                            ->reactive()
-                            ->afterStateUpdated(function ($state, callable $set, callable $get) {
-                                $jurusan = Jurusan::find($state);
-                                $gelombangId = $get('gelombang_id');
-                                $gelombang = $gelombangId ? Gelombang::find($gelombangId) : null;
-                                if ($jurusan && $gelombang) {
-                                    $kode = $jurusan->kode_jurusan . '-' . $gelombang->kode_gelombang;
-                                    $set('nomor_pendaftaran', $kode);
-                                }
-                            }),
+                            ->reactive(),
+                            // ->afterStateUpdated(function ($state, callable $set, callable $get) {
+                            //     $jurusan = Jurusan::find($state);
+                            //     $gelombangId = $get('gelombang_id');
+                            //     $gelombang = $gelombangId ? Gelombang::find($gelombangId) : null;
+                            //     if ($jurusan && $gelombang) {
+                            //         $kode = $jurusan->kode_jurusan . '-' . $gelombang->kode_gelombang;
+                            //         $set('nomor_pendaftaran', $kode);
+                            //     }
+                            // }),
 
                         Select::make('gelombang_id')
                             ->label('Gelombang')
                             ->options(Gelombang::where('is_active', true)->pluck('nama_gelombang', 'id'))
-                            ->required()
-                            ->reactive()
-                            ->afterStateUpdated(function ($state, callable $set, callable $get) {
-                                $gelombang = Gelombang::find($state);
-                                $jurusanId = $get('jurusan_id');
-                                $jurusan = $jurusanId ? Jurusan::find($jurusanId) : null;
-                                if ($jurusan && $gelombang) {
-                                    $kode = $jurusan->kode_jurusan . '-' . $gelombang->kode_gelombang;
-                                    $set('nomor_pendaftaran', $kode);
-                                }
-                            }),
+                            ->required(),
+                            // ->reactive()
+                            // ->afterStateUpdated(function ($state, callable $set, callable $get) {
+                            //     $gelombang = Gelombang::find($state);
+                            //     $jurusanId = $get('jurusan_id');
+                            //     $jurusan = $jurusanId ? Jurusan::find($jurusanId) : null;
+                            //     if ($jurusan && $gelombang) {
+                            //         $kode = $jurusan->kode_jurusan . '-' . $gelombang->kode_gelombang;
+                            //         $set('nomor_pendaftaran', $kode);
+                            //     }
+                            // }),
                         Select::make('kategori')
                             ->options([
                                 'REG' => 'Reguler',
@@ -97,10 +97,18 @@ class CreatePendaftar extends Component implements HasForms
                 Section::make('Data Pribadi')
                     ->schema([
                         TextInput::make('nomor_pendaftaran')
-                            ->label('No. Pendaftaran')
-                            ->required()
-                            ->maxLength(20)
-                            ->unique(Siswa::class, 'nomor_pendaftaran'),
+                            ->label('Nomor Pendaftaran')
+                            ->disabled()
+                            ->dehydrated(true)
+                            ->afterStateHydrated(function ($state, $set, $get) {
+                                if (!$state && $get('jurusan_id') && $get('gelombang_id') && $get('kategori')) {
+                                    $set('nomor_pendaftaran', Siswa::generateNomor(
+                                        $get('jurusan_id'),
+                                        $get('gelombang_id'),
+                                        $get('kategori'),
+                                    ));
+                                }
+                            }),
 
                         TextInput::make('nama')
                             ->label('Nama Lengkap')
@@ -198,6 +206,7 @@ class CreatePendaftar extends Component implements HasForms
         $data = $this->form->getState();
         //dd($data);
 
+
         $pendaftaran = Siswa::create($data);
         if ($pendaftaran->jenis_kelamin == 'L') {
             $du = Gelombang::find($data['gelombang_id'])->biaya;
@@ -213,14 +222,14 @@ class CreatePendaftar extends Component implements HasForms
 
         Notification::make()
             ->title('Pendaftaran Berhasil!')
-            ->body('Nomor pendaftaran Anda: ' . $pendaftaran->nomor_pendaftaran)
+            ->body('Nomor pendaftaran Anda: ' . $pendaftaran->nomor_pendaftaran.' Silakan catat nomor pendaftaran Anda untuk keperluan selanjutnya.')
             ->success()
             ->persistent()
             ->send();
 
         $this->form->fill();
 
-        session()->flash('success', 'Pendaftaran berhasil! Nomor pendaftaran: ' . $pendaftaran->nomor_pendaftaran);
+        session()->flash('success', 'Pendaftaran berhasil! Nomor pendaftaran: ' . $pendaftaran->nomor_pendaftaran).' Silakan catat nomor pendaftaran Anda untuk keperluan selanjutnya.';
     }
 
     public function render(): View
