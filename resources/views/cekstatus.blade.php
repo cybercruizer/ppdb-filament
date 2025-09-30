@@ -1,7 +1,4 @@
-@extends('components.layouts.page')
-
-@section('content')
-@extends('components.layouts.page')
+@extends('components.layouts.page-nonseo')
 
 @section('content')
     <style>
@@ -93,12 +90,14 @@
                 resultEl.innerHTML = `
                     <p>Halo <strong>${data.nama}</strong>,</p>
                     <p>Nomor Pendaftaran <strong>${data.nomor_pendaftaran}</strong></p>
+                    <p>Tes Fisik <strong>${data.status_fisik}</strong></p>
                     <p class="text-green-600 font-semibold">Selamat! Anda diterima.</p>
                 `;
             } else {
                 resultEl.innerHTML = `
                     <p>Halo <strong>${data.nama}</strong>,</p>
                     <p>Nomor Pendaftaran <strong>${data.nomor_pendaftaran}</strong></p>
+                    <p>Tes Fisik <strong>${data.status_fisik}</strong></p>
                     <p class="text-yellow-600 font-semibold">Maaf, Anda belum diterima.</p>
                 `;
             }
