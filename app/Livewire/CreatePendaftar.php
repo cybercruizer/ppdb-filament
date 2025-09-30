@@ -97,7 +97,7 @@ class CreatePendaftar extends Component implements HasForms
                 Section::make('Data Pribadi')
                     ->schema([
                         TextInput::make('nomor_pendaftaran')
-                            ->label('Nomor Pendaftaran')
+                            ->label('Nomor Pendaftaran (akan terisi otomatis)')
                             ->disabled()
                             ->dehydrated(true)
                             ->afterStateHydrated(function ($state, $set, $get) {

@@ -14,6 +14,7 @@ class HomeController extends Controller
         $pengaturan = \App\Models\PengaturanWebsite::all();
         $gelombangs = \App\Models\Gelombang::where('tahun_id', $ta->id)->latest()->get();
         $jurusans = \App\Models\Jurusan::all();
+        $beasiswas = \App\Models\Beasiswa::all();
         //dd($pengaturan);
         
         return view('index_ppdb', [
@@ -22,6 +23,7 @@ class HomeController extends Controller
             'pengaturan' => $pengaturan,
             'gelombangs' => $gelombangs,
             'jurusans' => $jurusans,
+            'beasiswas' => $beasiswas,
         ]);
     }
     public function informasi()

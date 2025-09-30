@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Models\User;
 use App\Models\Siswa;
 use App\Models\Tahun;
 use App\Models\Jurusan;
@@ -41,6 +42,11 @@ class CreateTesfisik extends Component implements HasForms
             ->schema([
             Section::make('Data Calon Siswa')
                 ->schema([
+                    Select::make('user_id')
+                        ->label('Petugas Input')
+                        ->searchable()
+                        ->options(User::pluck('name', 'id'))
+                        ->required(),
                     Select::make('siswa_id')
                         ->label('Calon Siswa')
                         ->options(Siswa::pluck('nama', 'id'))

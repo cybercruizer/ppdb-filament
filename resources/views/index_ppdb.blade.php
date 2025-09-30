@@ -204,76 +204,32 @@
             </p>
 
             <div class="news-grid">
-                <!-- Beasiswa Prestasi -->
-                <div class="news-card animate-on-scroll">
-                    <div class="news-date">
-                        <i class="fas fa-trophy"></i> Beasiswa Prestasi
+                <!-- Beasiswa -->
+                @forelse ($beasiswas as $beasiswa)
+                    <div class="news-card animate-on-scroll">
+                        <div class="news-date">
+                            <i class="fas fa-graduation-cap"></i> {{ $beasiswa->nama_beasiswa }}
+                        </div>
+                        <h3>Potongan hingga {{ $beasiswa->potongan_biaya }}</h3>
+                        <p>
+                            {{-- {!! nl2br(e($beasiswa->deskripsi)) !!} --}}
+                            {!! $beasiswa->deskripsi !!}
+                        </p>
+                        {{-- <a href="#daftar-beasiswa" class="read-more">
+                            Daftar Beasiswa <i class="fas fa-arrow-right"></i>
+                        </a> --}}
                     </div>
-                    <h3>Potongan hingga 100%</h3>
-                    <p>
-                        <strong>Persyaratan:</strong><br>
-                        • Follower sosial media > 500K: 50%<br>
-                        • Juara 1 Kabupaten: 50%<br>
-                        • Juara Nasional: 100%<br>
-                        • Tahfidz > 5 juz: 100%<br>
-                        • Tahfidz 1-5 juz: 50%<br><br>
-
-                        <strong>Dokumen:</strong> Sertifikat prestasi/tahfidz<br>
-                        <strong>Kuota:</strong> Terbuka<br>
-                        <strong>Jurusan:</strong> Semua jurusan
-                    </p>
-                    <a href="#daftar-beasiswa" class="read-more">
-                        Daftar Beasiswa <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- Beasiswa AUM -->
-                <div class="news-card animate-on-scroll">
-                    <div class="news-date">
-                        <i class="fas fa-handshake"></i> Beasiswa AUM
+                    
+                @empty
+                    <div class="news-card animate-on-scroll">
+                        <p>Belum ada program beasiswa tersedia saat ini.</p>
                     </div>
-                    <h3>Potongan 50%</h3>
-                    <p>
-                        <strong>Persyaratan:</strong><br>
-                        • Surat Rekomendasi PRM/PCM/PDM<br>
-                        • SK bekerja di AUM tahun berjalan<br>
-                        • Aktif di persyarikatan<br><br>
-
-                        <strong>Dokumen:</strong> Surat rekomendasi dan SK<br>
-                        <strong>Kuota:</strong> 40 murid baru<br>
-                        <strong>Jurusan:</strong> Semua jurusan
-                    </p>
-                    <a href="#daftar-beasiswa" class="read-more">
-                        Daftar Beasiswa <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- Beasiswa Afirmasi -->
-                <div class="news-card animate-on-scroll">
-                    <div class="news-date">
-                        <i class="fas fa-heart"></i> Beasiswa Afirmasi
-                    </div>
-                    <h3>Untuk Siswa Berprestasi</h3>
-                    <p>
-                        <strong>Persyaratan:</strong><br>
-                        • SKTM dari Desa<br>
-                        • Rekomendasi Sekolah Asal<br>
-                        • Lolos Seleksi SPMB<br>
-                        • Lolos Survey Panitia<br><br>
-
-                        <strong>Dokumen:</strong> SKTM dan rekomendasi<br>
-                        <strong>Kuota:</strong> Terbatas<br>
-                        <strong>Jurusan:</strong> Semua jurusan
-                    </p>
-                    <a href="#daftar-beasiswa" class="read-more">
-                        Daftar Beasiswa <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+                @endforelse
             </div>
 
             <div class="container" style="text-align: center; margin-top:50px">
                 <a href="/pendaftaran" class="btn btn-primary">
-                    <i class="fas fa-file-download"></i> Download Persyaratan Lengkap
+                    Download Persyaratan Lengkap
                 </a>
             </div>
         </div>
