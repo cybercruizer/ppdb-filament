@@ -227,11 +227,11 @@
                 @endforelse
             </div>
 
-            <div class="container" style="text-align: center; margin-top:50px">
-                <a href="/pendaftaran" class="btn btn-primary">
-                    Download Persyaratan Lengkap
+            {{-- <div class="container" style="text-align: center; margin-top:50px">
+                <a href="{{$pengaturan->where('key','link_detail_beasiswa')->value('value')}}" class="btn btn-primary">
+                    Baca Persyaratan Lengkap
                 </a>
-            </div>
+            </div> --}}
         </div>
     </section>
     <!-- News Section -->

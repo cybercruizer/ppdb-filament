@@ -264,7 +264,7 @@
             <div class="logo-container">
                 <div class="logo">
                     <!-- Ganti dengan path logo sekolah Anda -->
-                    <img src="/logo-smk.png" alt="Logo Sekolah" style="max-width: 100%; max-height: 100%;">
+                    <img src="/img/logo.png" alt="Logo Sekolah" style="max-width: 100%; max-height: 100%;">
                     {{-- <div class="logo-placeholder">
                         LOGO<br>SEKOLAH
                     </div> --}}

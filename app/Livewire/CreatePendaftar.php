@@ -9,6 +9,7 @@ use App\Models\Tagihan;
 use Livewire\Component;
 use Filament\Forms\Form;
 use App\Models\Gelombang;
+use App\Models\PengaturanWebsite;
 use Illuminate\Contracts\View\View;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Section;
@@ -82,12 +83,12 @@ class CreatePendaftar extends Component implements HasForms
                         Select::make('kategori')
                             ->options([
                                 'REG' => 'Reguler',
-                                'AP50' => 'AP 50%',
-                                'AP100' => 'AP 100%',
-                                'KB' => 'Kakak Beradik',
-                                'KM' => 'Kembar',
-                                'AUM' => 'Pegawai AUM',
-                                'PDK' => 'Pondok'
+                                // 'AP50' => 'AP 50%',
+                                // 'AP100' => 'AP 100%',
+                                // 'KB' => 'Kakak Beradik',
+                                // 'KM' => 'Kembar',
+                                // 'AUM' => 'Pegawai AUM',
+                                // 'PDK' => 'Pondok'
                             ])
                             ->required()
                             ->label('Kategori'),
@@ -208,10 +209,11 @@ class CreatePendaftar extends Component implements HasForms
 
 
         $pendaftaran = Siswa::create($data);
+        $penambahan_biaya_putri = PengaturanWebsite::where('key', 'penambahan_biaya_putri')->value('value');
         if ($pendaftaran->jenis_kelamin == 'L') {
             $du = Gelombang::find($data['gelombang_id'])->biaya;
         } else {
-            $du = Gelombang::find($data['gelombang_id'])->biaya + 100000;
+            $du = Gelombang::find($data['gelombang_id'])->biaya + $penambahan_biaya_putri;
         }
         //input to tagihan
         Tagihan::create([
