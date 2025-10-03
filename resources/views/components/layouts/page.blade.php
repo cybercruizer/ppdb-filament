@@ -115,7 +115,15 @@
 
         .nav-menu .btn-primary:hover {
             color: rgb(15, 63, 0) !important;
+            background: linear-gradient(135deg, #43af47, #267a2a);
             border: #2e7d32 !important;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+
+        }
+        .nav-menu .btn-blue:hover {
+            color: rgb(0, 25, 63) !important;
+            background: linear-gradient(135deg, #058bb4, #1265e0);
+            border: #276772 !important;
             box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
 
         }
@@ -288,6 +296,11 @@
             background: linear-gradient(135deg, #4CAF50, #2E7D32);
             color: white !important;
             box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+        }
+        .btn-blue {
+            background: linear-gradient(135deg, #057ca0, #0f56c0);
+            color: white !important;
+            box-shadow: 0 8px 25px rgba(57, 113, 165, 0.4);
         }
 
 
@@ -1026,7 +1039,8 @@
                 <li><a href="/#mengapa-kami">Tentang</a></li>
                 <li><a href="/#jurusan">Jurusan</a></li>
                 <li><a href="/informasi">Informasi</a></li>
-                <li><a href="/#kontak">Kontak</a></li>
+                {{-- <li><a href="/#kontak">Kontak</a></li> --}}
+                <li><a href="/cekstatus" class="btn-blue">Cek Status</a></li>
                 <li><a href="/pendaftaran" class="btn-primary">Daftar Sekarang</a></li>
                 {{-- <li><a href="/pendaftaran" class="btn btn-primary" style="padding: 0.5rem 1.5rem;">Daftar PPDB</a></li> --}}
             </ul>
@@ -1041,11 +1055,11 @@
 
     <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
-        <ul class="sidebar-menu" style="margin-top: 4rem;">
+        <ul class="sidebar-menu" style="margin-top: 3rem;">
             <li><a href="/#mengapa-kami">Tentang</a></li>
             <li><a href="/#jurusan">Jurusan</a></li>
             <li><a href="/informasi">Informasi</a></li>
-            <li><a href="#kontak">Kontak</a></li>
+            <li><a href="/cekstatus">Cek Status</a></li>
             <li><a href="/pendaftaran">Daftar Sekarang</a></li>
         </ul>
     </div>
