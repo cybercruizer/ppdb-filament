@@ -235,7 +235,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('/img/bg.jpg');
+            background: url('/img/bg.jpg') no-repeat center center;
+            background-size: cover;
             opacity: 0.8;
             pointer-events: none;
             z-index: 0;
