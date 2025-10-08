@@ -2,10 +2,12 @@
 
 namespace App\Filament\Pages;
 
-use App\Filament\Resources\SiswaResource;
-use App\Filament\Resources\SiswaResource\Widgets\SiswaOverview;
-use App\Filament\Widgets\SiswaChart;
 use App\Models\Siswa;
+use App\Filament\Widgets\SiswaChart;
+use App\Filament\Resources\SiswaResource;
+use App\Filament\Resources\TesfisikResource\Widgets\DistribusiUkuranBaju;
+use App\Filament\Resources\TesfisikResource\Widgets\RekapBaju;
+use App\Filament\Resources\SiswaResource\Widgets\SiswaOverview;
 
 class Dashboard extends \Filament\Pages\Dashboard
 {
@@ -15,6 +17,8 @@ class Dashboard extends \Filament\Pages\Dashboard
         return [
             SiswaOverview::class,
             SiswaChart::class,
+            RekapBaju::class,
+            DistribusiUkuranBaju::class,
         ];
     }
 }

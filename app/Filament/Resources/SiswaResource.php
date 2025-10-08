@@ -19,6 +19,8 @@ use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\SiswaResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\SiswaResource\RelationManagers;
+use Filament\Actions\ActionGroup;
+use Filament\Forms\Components\Toggle;
 use Filament\Tables\Columns\IconColumn;
 
 class SiswaResource extends Resource
@@ -49,13 +51,13 @@ class SiswaResource extends Resource
                     ->label('Nomor Pendaftaran'),
                 Forms\Components\Select::make('kategori')
                     ->options([
-                        'REG'=>'Reguler',
+                        'REG' => 'Reguler',
                         'AP50' => 'AP 50%',
-                        'AP100'=> 'AP 100%',
-                        'KB'=>'Kakak Beradik',
-                        'KM'=>'Kembar',
-                        'AUM'=>'Pegawai AUM',
-                        'PDK'=> 'Pondok'
+                        'AP100' => 'AP 100%',
+                        'KB' => 'Kakak Beradik',
+                        'KM' => 'Kembar',
+                        'AUM' => 'Pegawai AUM',
+                        'PDK' => 'Pondok'
                     ])
                     ->required()
                     ->label('Kategori'),
@@ -100,7 +102,7 @@ class SiswaResource extends Resource
                             ->maxLength(255)
                             ->label('Nama Ibu'),
                     ]),
-                
+
                 Forms\Components\Hidden::make('tahun_id')
                     ->required()
                     ->default(function (callable $get) {
@@ -108,7 +110,7 @@ class SiswaResource extends Resource
                             ->first()->id;
                     }),
                 //create tagihan for this siswa, jumlah_tagihan = gelombang.biaya where is_active = true
-/*                Forms\Components\TextInput::make('jumlah_tagihan')
+                /*                Forms\Components\TextInput::make('jumlah_tagihan')
                     ->required()
                     ->numeric()
                     ->label('Jumlah Tagihan')
@@ -137,10 +139,10 @@ class SiswaResource extends Resource
                                     ->first()->biaya;
                             }),
                     ]),
-                    Forms\Components\TextInput::make('catatan')
+                Forms\Components\TextInput::make('catatan')
                     ->maxLength(255)
                     ->label('Catatan'),
-                
+
             ]);
     }
 
@@ -159,7 +161,7 @@ class SiswaResource extends Resource
                     ->searchable()
                     //limit string to 50 character
                     ->limit(30)
-                    ->description(fn (Siswa $record): string => $record->catatan??''),
+                    ->description(fn(Siswa $record): string => $record->catatan ?? ''),
                 Tables\Columns\TextColumn::make('tempat_lahir')
                     ->sortable(),
                 Tables\Columns\TextColumn::make('tanggal_lahir')
@@ -180,6 +182,12 @@ class SiswaResource extends Resource
                     ->falseIcon('heroicon-o-x-circle')
                     ->trueColor('success')
                     ->falseColor('danger'),
+                Tables\Columns\ToggleColumn::make('is_accepted')
+                    ->label('diterima')
+                    ->onIcon('heroicon-s-check-circle')
+                    ->offIcon('heroicon-s-x-circle')
+                    ->onColor('success')
+                    ->offColor('danger'),
                 // Tables\Columns\TextColumn::make('tahun_id')
                 //     ->getStateUsing(function (Siswa $record) {
                 //         return $record->tahun->nama_tahun;
@@ -206,24 +214,25 @@ class SiswaResource extends Resource
                     ->label('Gelombang'),
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
-                Tables\Actions\Action::make('waAction')
-                    ->label('WA')
-                    ->url(fn (Siswa $record): string => 'https://api.whatsapp.com/send?phone=62' . substr($record->no_telepon, 1) . '&text=Hallo%20' . $record->nama . '%0A%0AAssalamualaikum%20wr%20wb%0A%0AKami%20TIM%20PPDB%20SMK%20Muhammadiyah%20Mungkid%0A')
-                    ->icon('heroicon-o-paper-airplane')
-                    ->openUrlInNewTab()
-                    ->color('success'),
-                Tables\Actions\Action::make('print')
-                    ->url(fn (Siswa $record): string => route('tes.pengumuman', ['id' => $record->id]))
-                    ->icon('heroicon-o-printer')
-                    ->openUrlInNewTab()
-                    ->color('primary'),
-
+                Tables\Actions\ActionGroup::make([
+                    Tables\Actions\EditAction::make(),
+                    Tables\Actions\DeleteAction::make(),
+                    Tables\Actions\Action::make('waAction')
+                        ->label('WA')
+                        ->url(fn(Siswa $record): string => 'https://api.whatsapp.com/send?phone=62' . substr($record->no_telepon, 1) . '&text=Hallo%20' . $record->nama . '%0A%0AAssalamualaikum%20wr%20wb%0A%0AKami%20TIM%20PPDB%20SMK%20Muhammadiyah%20Mungkid%0A')
+                        ->icon('heroicon-o-paper-airplane')
+                        ->openUrlInNewTab()
+                        ->color('success'),
+                    Tables\Actions\Action::make('print')
+                        ->url(fn(Siswa $record): string => route('tes.pengumuman', ['id' => $record->id]))
+                        ->icon('heroicon-o-printer')
+                        ->openUrlInNewTab()
+                        ->color('primary'),
+                ])
             ])
             ->headerActions([
                 CreateAction::make()
-                ->icon('heroicon-o-plus'),
+                    ->icon('heroicon-o-plus'),
                 ExportAction::make()
                     ->exporter(SiswaExporter::class)
                     ->columnMapping(false)

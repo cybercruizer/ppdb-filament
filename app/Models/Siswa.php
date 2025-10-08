@@ -35,6 +35,7 @@ class Siswa extends Model
         'tahun_id',
         'jurusan_id',
         'gelombang_id',
+        'is_accepted'
     ];
     // add guaded
     protected $guarded = ['id'];
