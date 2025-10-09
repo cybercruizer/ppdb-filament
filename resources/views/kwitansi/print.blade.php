@@ -6,7 +6,7 @@
     <title>Kuitansi Pembayaran - {{ $pembayaran->tagihan->siswa->nama }}</title>
     <style>
         @page {
-            size: A5 landscape;
+            size: A4 portrait;
             margin: 0cm;
         }
         
@@ -68,9 +68,8 @@
         }
         
         .header-info h1 {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: bold;
-            margin-bottom: 5px;
             text-transform: uppercase;
         }
         
@@ -86,7 +85,7 @@
         
         .kwitansi-title {
             text-align: center;
-            margin: 15px 0;
+            margin: 5px 0;
         }
         
         .kwitansi-title h3 {
@@ -232,7 +231,7 @@
             }
             
             .kwitansi-container {
-                border: 1px solid #303030;
+                /* border: 1px solid #303030; */
                 margin: 0;
                 padding-top: 5px;
                 padding-left: 10px;
@@ -264,7 +263,7 @@
             <div class="logo-container">
                 <div class="logo">
                     <!-- Ganti dengan path logo sekolah Anda -->
-                    <img src="/img/logo.png" alt="Logo Sekolah" style="max-width: 100%; max-height: 100%;">
+                    <img src="/img/logo.png" alt="Logo Sekolah" style="max-width: 90%; max-height: 90%;">
                     {{-- <div class="logo-placeholder">
                         LOGO<br>SEKOLAH
                     </div> --}}
@@ -279,7 +278,7 @@
         
         <!-- Judul Kwitansi -->
         <div class="kwitansi-title">
-            <h3>Kuitansi Pembayaran</h3>
+            <h3>Kuitansi Pembayaran SPMB</h3>
         </div>
         
         <!-- Nomor Kwitansi -->
@@ -309,7 +308,7 @@
             <div class="info-row">
                 <div class="info-label">Untuk pembayaran</div>
                 <div class="info-separator">:</div>
-                <div class="info-value">{{ $pembayaran->tagihan->nama_tagihan ?? 'Pembayaran Sekolah' }}</div>
+                <div class="info-value">{{ $pembayaran->tagihan->nama_tagihan." ".$pembayaran->siswa->gelombang->nama_gelombang}}</div>
             </div>
         </div>
         

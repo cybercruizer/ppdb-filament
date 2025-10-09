@@ -218,7 +218,7 @@ class CreatePendaftar extends Component implements HasForms
         //input to tagihan
         Tagihan::create([
             'siswa_id' => $pendaftaran->id,
-            'nama_tagihan' => 'PPDB',
+            'nama_tagihan' => 'SPMB',
             'jumlah_tagihan' => $du,
         ]);
 
