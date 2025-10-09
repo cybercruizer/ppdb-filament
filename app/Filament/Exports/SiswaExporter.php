@@ -40,8 +40,8 @@ class SiswaExporter extends Exporter
                 ->label('Jurusan'),
             ExportColumn::make('gelombang.nama_gelombang')
                 ->label('Nama gelombang'),
-
-
+            ExportColumn::make('informasi')
+                ->label('Informasi'),
         ];
     }
 
