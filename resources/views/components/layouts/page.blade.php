@@ -246,7 +246,7 @@
             position: relative;
             z-index: 1;
             padding: 2rem;
-            border-radius: 5%;
+            border-radius: 10px;
             background: rgba(0, 0, 0, 0.2);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
