@@ -9,7 +9,11 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\JurusanController;
 use App\Http\Controllers\KwitansiController;
+use App\Http\Controllers\VerifikasiController;
 use App\Filament\Resources\PendaftaranResource\Pages\CreatePendaftaran;
+use App\Models\Gelombang;
+use App\Models\PengaturanWebsite;
+use App\Models\Tahun;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/informasi',[HomeController::class, 'informasi'])->name('berita');
@@ -33,14 +37,24 @@ Route::get('createSyncTagihan', function () {
 Route::get('/kwitansi/{pembayaran}/print', [KwitansiController::class, 'print'])
     ->name('kwitansi.print')
     ->middleware('auth');
+Route::get('/verifikasi/{nomorPendaftaran}', [VerifikasiController::class, 'index'])
+    ->name('verifikasi');
     
 Route::get('pendaftaran', CreatePendaftar::class);
 Route::get('tesfisik', CreateTesfisik::class);
 Route::get('/post/{slug}',[PostController::class,'show'])->name('post.view');
-Route::get('/tespengumuman/{id}', function () {
+Route::get('/pengumuman/{id}', function () {
+    $tahun=Tahun::where('is_active',true)->first();
+    $pengaturan=PengaturanWebsite::get();
     $siswa=Siswa::find(request('id'));
-    return view('pengumuman', ['siswa'=>$siswa]);
-})->name('tes.pengumuman');
+    return view('pengumuman', [
+        'siswa'=>$siswa,
+        'pengaturan'=>$pengaturan,
+        'tahun'=>$tahun->nama_tahun
+    ]);
+})
+->middleware('auth')->name('pengumuman.print');
+
 Route::get('/cekstatus', function() {
     return view('cekstatus');
 });

@@ -224,7 +224,7 @@ class SiswaResource extends Resource
                         ->openUrlInNewTab()
                         ->color('success'),
                     Tables\Actions\Action::make('print')
-                        ->url(fn(Siswa $record): string => route('tes.pengumuman', ['id' => $record->id]))
+                        ->url(fn(Siswa $record): string => route('pengumuman.print', ['id' => $record->id]))
                         ->icon('heroicon-o-printer')
                         ->openUrlInNewTab()
                         ->color('primary'),
