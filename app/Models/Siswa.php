@@ -68,6 +68,10 @@ class Siswa extends Model
     {
         return $this->hasMany(Pembayaran::class);
     }
+    public function getSudahduAttribute()
+    {
+        return $this->pembayarans()->exists();
+    }
     /**
      * Get the tagihan associated with the Siswa
      *

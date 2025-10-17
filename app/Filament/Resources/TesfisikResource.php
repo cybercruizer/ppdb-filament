@@ -244,6 +244,7 @@ class TesfisikResource extends Resource
                     ->toggleable(isToggledHiddenByDefault: true),
                 
             ])
+            ->defaultSort('created_at', 'desc')
             ->filters([
                 //
             ])

@@ -20,33 +20,19 @@ class SiswaOverview extends BaseWidget
                     $query->whereHas('pembayarans');
                 })->count())
                 ->icon('heroicon-o-credit-card'),
-            Stat::make('TSM', Siswa::whereHas('jurusan', function ($query) {
-                $query->where('kode_jurusan', 'TSM');
-                })->count())
+            Stat::make('TSM', Jurusan::jumlahSiswaByKode('TSM').' / '.Jurusan::jumlahSiswaBayarByKode('TSM'))
                 ->icon('heroicon-o-users'),
-            Stat::make('TITL', Siswa::whereHas('jurusan', function ($query) {
-                $query->where('kode_jurusan', 'TITL');
-                })->count())
+            Stat::make('TITL', Jurusan::jumlahSiswaByKode('TITL').' / '.Jurusan::jumlahSiswaBayarByKode('TITL'))
                 ->icon('heroicon-o-users'),
-            Stat::make('TPM', Siswa::whereHas('jurusan', function ($query) {
-                $query->where('kode_jurusan', 'TPM');
-                })->count())
+            Stat::make('TPM', Jurusan::jumlahSiswaByKode('TPM').' / '.Jurusan::jumlahSiswaBayarByKode('TPM'))
                 ->icon('heroicon-o-users'),
-            Stat::make('TKJ', Siswa::whereHas('jurusan', function ($query) {
-                $query->where('kode_jurusan', 'TKJ');
-                })->count())
+            Stat::make('TKJ', Jurusan::jumlahSiswaByKode('TKJ').' / '.Jurusan::jumlahSiswaBayarByKode('TKJ'))
                 ->icon('heroicon-o-users'),
-            Stat::make('TKR', Siswa::whereHas('jurusan', function ($query) {
-                $query->where('kode_jurusan', 'TKR');
-                })->count())
+            Stat::make('TKR', Jurusan::jumlahSiswaByKode('TKR').' / '.Jurusan::jumlahSiswaBayarByKode('TKR'))
                 ->icon('heroicon-o-users'),
-            Stat::make('PHT', Siswa::whereHas('jurusan', function ($query) {
-                    $query->where('kode_jurusan', 'PHT');
-                    })->count())
+            Stat::make('PHT', Jurusan::jumlahSiswaByKode('PHT').' / '.Jurusan::jumlahSiswaBayarByKode('PHT'))
                     ->icon('heroicon-o-users'),
-            Stat::make('KUL', Siswa::whereHas('jurusan', function ($query) {
-                    $query->where('kode_jurusan', 'KUL');
-                    })->count())
+            Stat::make('KUL', Jurusan::jumlahSiswaByKode('KUL').' / '.Jurusan::jumlahSiswaBayarByKode('KUL'))
                     ->icon('heroicon-o-users'),
         ];
     }

@@ -34,4 +34,13 @@ class Jurusan extends Model
     {
         return $this->hasMany(Siswa::class);
     }
+    public static function jumlahSiswaByKode(String $kode):int
+    {
+        return self::where('kode_jurusan',$kode)->first()?->siswa()->count() ?? 0;
+    }
+    public static function jumlahSiswaBayarByKode(String $kode):int
+    {
+        return self::where('kode_jurusan',$kode)->first()?->siswa()->whereHas('pembayarans')->count() ?? 0;
+    }
+
 }

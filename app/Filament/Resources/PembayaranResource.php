@@ -111,7 +111,7 @@ class PembayaranResource extends Resource
                     ->sortable(),
                 TextColumn::make('tagihan.jumlah_tagihan')
                     ->label('Jumlah Tagihan')
-                    ->searchable()
+                    ->money('IDR')
                     ->sortable(),
                 TextColumn::make('jumlah_pembayaran')
                     ->label('Jumlah Pembayaran')
@@ -122,6 +122,7 @@ class PembayaranResource extends Resource
                     ->label('Tanggal Pembayaran')
                     ->sortable(),
             ])
+            ->defaultSort('created_at','desc')
             ->filters([
                 //make date range filter
                 Tables\Filters\Filter::make('tanggal_pembayaran')

@@ -78,15 +78,15 @@ class TagihanResource extends Resource
             ->actions([
                 Tables\Actions\EditAction::make()
                     ->visible(fn() => auth()->user()->can('edit_any_tagihan')),
-                Tables\Actions\DeleteAction::make()
-                    ->visible(fn() => auth()->user()->can('delete_any_tagihan')),
+                // Tables\Actions\DeleteAction::make()
+                //     ->visible(fn() => auth()->user()->can('delete_any_tagihan')),
 
             ])
             ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
-                ])
-                    ->visible(fn() => auth()->user()->can('delete_any_tagihan')),
+                // Tables\Actions\BulkActionGroup::make([
+                //     Tables\Actions\DeleteBulkAction::make(),
+                // ])
+                //     ->visible(fn() => auth()->user()->can('delete_any_tagihan')),
             ])
             ->headerActions([
                 ExportAction::make()
@@ -95,7 +95,8 @@ class TagihanResource extends Resource
                         ExportFormat::Xlsx,
                     ])
                     ->icon('heroicon-o-arrow-down-tray')
-            ]);
+            ])
+            ->defaultSort('created_at', 'desc');
     }
 
     public static function getRelations(): array
