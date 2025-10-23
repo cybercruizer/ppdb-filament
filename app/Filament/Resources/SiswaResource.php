@@ -388,6 +388,9 @@ class SiswaResource extends Resource
                 Tables\Filters\SelectFilter::make('gelombang_id')
                     ->relationship('gelombang', 'nama_gelombang')
                     ->label('Gelombang'),
+                Tables\Filters\TernaryFilter::make('is_accepted')
+                    ->label('Diterima?')
+                    ->attribute('is_accepted'),
             ])
             ->actions([
                 Tables\Actions\ActionGroup::make([

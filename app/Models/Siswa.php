@@ -30,12 +30,16 @@ class Siswa extends Model
         'asal_sekolah',
         'nama_ayah',
         'nama_ibu',
+        'alamat_ortu',
+        'no_telepon_ortu',
         'alamat',
         'catatan',
         'tahun_id',
         'jurusan_id',
         'gelombang_id',
-        'is_accepted'
+        'is_accepted',
+        'informasi',
+        'user_id',
     ];
     // add guaded
     protected $guarded = ['id'];
