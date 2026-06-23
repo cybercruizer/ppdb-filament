@@ -50,7 +50,7 @@ class SiswaResource extends Resource
                     ->label('Gelombang'),
                 Forms\Components\TextInput::make('nomor_pendaftaran')
                     ->required()
-                    ->maxLength(17)
+                    ->maxLength(20)
                     ->unique(ignoreRecord: true)
                     ->label('Nomor Pendaftaran'),
                 Forms\Components\Select::make('kategori')

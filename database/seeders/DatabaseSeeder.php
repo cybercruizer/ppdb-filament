@@ -24,9 +24,10 @@ class DatabaseSeeder extends Seeder
         //call BookSeeder
         $this->call(
             [
-                BookSeeder::class,
-                PostSeeder::class,
-                ContactSeeder::class,
+                //BookSeeder::class,
+                //PostSeeder::class,
+                //ContactSeeder::class,
+                taSeeder::class,
             ]
         );
     }

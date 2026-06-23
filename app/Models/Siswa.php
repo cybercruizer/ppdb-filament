@@ -40,6 +40,7 @@ class Siswa extends Model
         'is_accepted',
         'informasi',
         'user_id',
+        'no_telepon_ortu',
     ];
     // add guaded
     protected $guarded = ['id'];
