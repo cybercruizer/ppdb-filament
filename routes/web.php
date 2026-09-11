@@ -1,25 +1,29 @@
 <?php
 
 use App\Models\Siswa;
+use App\Models\Tahun;
 use App\Models\Tagihan;
+use App\Models\Gelombang;
 use App\Livewire\CreateTesfisik;
 use App\Livewire\CreatePendaftar;
+use App\Models\PengaturanWebsite;
 use Illuminate\Support\Facades\Route;
+use App\Livewire\PendaftaranCalonMurid;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\JurusanController;
 use App\Http\Controllers\KwitansiController;
 use App\Http\Controllers\VerifikasiController;
 use App\Filament\Resources\PendaftaranResource\Pages\CreatePendaftaran;
-use App\Models\Gelombang;
-use App\Models\PengaturanWebsite;
-use App\Models\Tahun;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/informasi',[HomeController::class, 'informasi'])->name('berita');
 Route::get('/jurusan/{kode_jurusan}',[JurusanController::class,'deskripsi'])->name('jurusan');
 Route::get('form-pendaftaran', [HomeController::class, 'form'])->name('form.pendaftaran');
 Route::post('form-pendaftaran', [HomeController::class, 'formStore'])->name('form.pendaftaran.store');
+Route::get('/pendataan', PendaftaranCalonMurid::class)
+    ->name('pendataan.calon-murid');
+
 
 Route::get('createSyncTagihan', function () {
     $id_siswa = Siswa::get()->pluck('id')->toArray();
