@@ -12,6 +12,9 @@ class taSeeder extends Seeder
      */
     public function run(): void
     {
-        
+        \App\Models\Tahun::create([
+            'nama_tahun' => '2025/2026',
+            'is_active' => 1,
+        ]);
     }
 }
