@@ -35,7 +35,9 @@ class CalonMuridResource extends Resource
                 ->numeric()
                 ->label('NIK')
                 ->length(16)
-                ->unique(),
+                ->unique(ignoreRecord: true)
+                ->dehydrated(fn (string $operation): bool => ! $operation === 'create')
+                ->disabledOn('edit'),
                 Forms\Components\TextInput::make('nama')
                 ->required(),
                 Forms\Components\TextInput::make('asal_smp')
