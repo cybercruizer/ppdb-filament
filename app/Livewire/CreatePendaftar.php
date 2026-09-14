@@ -209,17 +209,22 @@ class CreatePendaftar extends Component implements HasForms
 
 
         $pendaftaran = Siswa::create($data);
-        $penambahan_biaya_putri = PengaturanWebsite::where('key', 'penambahan_biaya_putri')->value('value');
-        if ($pendaftaran->jenis_kelamin == 'L') {
-            $du = Gelombang::find($data['gelombang_id'])->biaya;
+        //$penambahan_biaya_putri = PengaturanWebsite::where('key', 'penambahan_biaya_putri')->value('value');
+        if (Gelombang::find($data['gelombang_id'])->diskon > 0) {
+            $du_final = Gelombang::find($data['gelombang_id'])->biaya - Gelombang::find($data['gelombang_id'])->diskon;
         } else {
-            $du = Gelombang::find($data['gelombang_id'])->biaya + $penambahan_biaya_putri;
+            $du_final = Gelombang::find($data['gelombang_id'])->biaya;
         }
+        // if ($pendaftaran->jenis_kelamin == 'L') {
+        //     $du = $du_final;
+        // } else {
+        //     $du = Gelombang::find($data['gelombang_id'])->biaya + $penambahan_biaya_putri;
+        // }
         //input to tagihan
         Tagihan::create([
             'siswa_id' => $pendaftaran->id,
             'nama_tagihan' => 'SPMB',
-            'jumlah_tagihan' => $du,
+            'jumlah_tagihan' => $du_final,
         ]);
 
         Notification::make()
