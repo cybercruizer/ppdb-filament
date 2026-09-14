@@ -48,7 +48,14 @@ class GelombangResource extends Resource
                     ->required()
                     ->numeric()
                     ->label('Biaya')
+                    ->prefix('Rp ')
                     ->placeholder('Masukkan Biaya'),
+                Forms\Components\TextInput::make('diskon')
+                    ->required()
+                    ->numeric()
+                    ->label('Diskon')
+                    ->prefix('Rp ')
+                    ->placeholder('Masukkan Diskon'),
                 Forms\Components\Textarea::make('keterangan')
                     ->label('Keterangan')
                     ->placeholder('Masukkan Keterangan'),

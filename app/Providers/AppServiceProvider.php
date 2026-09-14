@@ -62,6 +62,10 @@ class AppServiceProvider extends ServiceProvider
                     ->icon('heroicon-o-pencil'),
             ]);
         });
+        Blade::directive('rupiah',function($expression)
+        {
+            return "Rp <?php echo number_format($expression, 2, ',', '.'); ?>";
+        });
         require_once app_path('Helpers/Helpers.php');
     }
 }

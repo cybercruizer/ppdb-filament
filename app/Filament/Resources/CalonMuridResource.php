@@ -16,9 +16,12 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\CalonMuridResource\Pages;
 use App\Filament\Resources\CalonMuridResource\RelationManagers;
+use BezhanSalleh\FilamentShield\Contracts\HasShieldPermissions;
+use BezhanSalleh\FilamentShield\Traits\HasShieldFormComponents;
 
-class CalonMuridResource extends Resource
+class CalonMuridResource extends Resource implements HasShieldPermissions
 {
+    use HasShieldFormComponents;
     protected static ?string $model = CalonMurid::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
@@ -26,6 +29,19 @@ class CalonMuridResource extends Resource
     protected static ?string $label = 'Calon Murid';
     protected static ?string $navigationLabel = 'Calon Murid';
 
+    public static function getPermissionPrefixes(): array
+    {
+        return [
+            'view',
+            'view_any',
+            'create',
+            'update',
+            'delete',
+            'delete_any',
+        ];
+    }
+
+    
     public static function form(Form $form): Form
     {
         return $form

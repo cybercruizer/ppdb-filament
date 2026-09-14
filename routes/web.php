@@ -51,10 +51,15 @@ Route::get('/pengumuman/{id}', function () {
     $tahun=Tahun::where('is_active',true)->first();
     $pengaturan=PengaturanWebsite::get();
     $siswa=Siswa::find(request('id'));
+    $gel=Gelombang::where([
+            ['tahun_id', $tahun->id]
+        ])->get();
+    // dd($gel);
     return view('pengumuman', [
         'siswa'=>$siswa,
         'pengaturan'=>$pengaturan,
-        'tahun'=>$tahun->nama_tahun
+        'tahun'=>$tahun->nama_tahun,
+        'gelombang' => $gel,
     ]);
 })
 ->middleware('auth')->name('pengumuman.print');
